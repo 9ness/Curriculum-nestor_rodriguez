@@ -148,7 +148,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 2:
         outs = [sys.argv[2]]
     else:
-        outs = [str(root / "web" / "cv.pdf"), str(root / "cv" / "CV-Nestor-Rodriguez-Tubio.pdf")]
+        outs = [str(root / "cv.pdf"), str(root / "cv" / "CV-Nestor-Rodriguez-Tubio.pdf")]
     for o in outs:
         build(data, o)
         print("PDF generado:", o)

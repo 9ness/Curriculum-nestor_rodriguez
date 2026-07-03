@@ -16,6 +16,7 @@
     "web": "PENDIENTE_DESPLIEGUE_VERCEL"
   },
   "resumen": "Desarrollador backend senior con más de 6 años de experiencia construyendo aplicaciones Java (Spring Boot) sobre arquitecturas de microservicios en entornos críticos (administración pública, ámbito judicial, automoción, sanidad). Desde 2024 integro IA generativa en productos reales con múltiples proveedores (OpenAI, Claude, Google Gemini, DeepSeek): análisis inteligente de datos, generación de contenido, recomendaciones y orquestación de flujos y agentes de IA, cuidando latencia y coste. Administro además mi propio servidor VPS para desplegar servicios e IA en la nube. Combino solidez en backend Java con experiencia práctica en IA aplicada a producto.",
+  "perfil_corto": "Backend senior con 6+ años en Java/Spring Boot y microservicios para entornos críticos. Desde 2024, IA generativa en producción (OpenAI, Claude, Gemini, DeepSeek) con orquestación de agentes, y servidor VPS propio para desplegar IA en la nube.",
   "skills": {
     "lenguajes": ["Java", "JavaScript", "C# / .NET", "SQL", "HTML/CSS"],
     "frameworks_backend": ["Spring Boot", "Spring Cloud", "Spring Security", "Spring MVC", "JPA / Hibernate", "Servicios SOAP", "API REST"],

@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "descripcion": "Fuente de verdad con los datos del CV de Néstor. El CV maestro (cv-maestro.md) y la web se generan a partir de aquí. Las versiones adaptadas por empresa parten de este mismo contenido.",
+    "actualizado": "2026-07-03",
+    "regla_de_oro": "NUNCA inventar. Solo reorganizar, reescribir y enfatizar lo que ya es cierto."
+  },
+  "personal": {
+    "nombre": "Néstor Rodríguez Tubío",
+    "titular": "Desarrollador Backend Senior · Java & IA Generativa",
+    "ubicacion": "Sevilla, España",
+    "disponibilidad": "Abierto a remoto y a Sevilla / Andalucía",
+    "email": "ness4b@gmail.com",
+    "telefono": "PENDIENTE_RELLENAR",
+    "linkedin": "PENDIENTE_RELLENAR",
+    "github": "PENDIENTE_RELLENAR",
+    "web": "PENDIENTE_DESPLIEGUE_VERCEL"
+  },
+  "resumen": "Desarrollador backend senior con casi 5 años de experiencia construyendo aplicaciones Java (Spring Boot) sobre arquitecturas de microservicios en entornos críticos (administración pública, banca judicial, automoción, sanidad). Desde 2024 integro IA generativa (OpenAI, DeepSeek) en productos reales: análisis inteligente de datos, generación automática de contenido y recomendaciones personalizadas, cuidando latencia y coste. Combino solidez en backend Java con experiencia práctica en IA aplicada a producto.",
+  "skills": {
+    "lenguajes": ["Java", "JavaScript", "C# / .NET", "SQL", "HTML/CSS"],
+    "frameworks_backend": ["Spring Boot", "Spring Cloud", "Spring Security", "Spring MVC", "JPA / Hibernate", "Servicios SOAP", "API REST"],
+    "microservicios": ["Arquitectura de microservicios", "Eureka", "Ribbon", "RabbitMQ", "Docker", "Weblogic", "Wildfly"],
+    "ia": ["Integración de APIs de IA (OpenAI, DeepSeek)", "Ingeniería de prompts", "IA generativa en producto", "Next.js", "Optimización de latencia y coste en LLMs"],
+    "bases_de_datos": ["Oracle SQL", "SQL Server", "MySQL", "MongoDB", "SAP HANA"],
+    "cloud_devops": ["Amazon AWS", "Docker", "Git / GitHub / Bitbucket", "Maven", "Gradle", "Jira", "SAP BTP"],
+    "testing": ["JUnit", "Mockito", "SOAPUI"],
+    "frontend": ["JavaScript", "React / Redux", "XHTML/JSP", "AJAX", "HTML/CSS"]
+  },
+  "experiencia_tecnica_resumen": {
+    "Java": "4 años y 9 meses",
+    "Spring Boot": "2 años y 4 meses",
+    "Microservicios": "3 años y 2 meses",
+    "Frontend": "1 año y 10 meses",
+    "IA aplicada": "1 año y 7 meses",
+    "Integración de APIs de IA (OpenAI, DeepSeek)": "1 año y 4 meses",
+    ".NET": "8 meses",
+    "MongoDB": "5 meses"
+  },
+  "experiencia": [
+    {
+      "empresa": "Ayesa",
+      "puesto": "Desarrollador Backend",
+      "ubicacion": "Sevilla",
+      "periodo": "Ene 2023 - Actualidad",
+      "puntos": [
+        "Desarrollo de soluciones Java (backend y frontend) para la Junta de Andalucía en arquitecturas de microservicios y monolíticas.",
+        "Microservicios Java con Spring Boot integrando el ecosistema SAP (BTP Cockpit, SAP HANA Cloud, SAP Logon).",
+        "Lectura, validación y procesamiento de archivos CSV con persistencia en base de datos.",
+        "Desarrollo full-stack en proyectos con XHTML/JSP y JavaScript, sobre servidores Weblogic y bases de datos Oracle y MongoDB."
+      ],
+      "tecnologias": ["Java", "Spring Boot", "Microservicios", "SAP HANA", "SAP BTP", "MongoDB", "Oracle", "Weblogic", "Docker", "AWS", "JUnit", "Mockito", "API REST"]
+    },
+    {
+      "empresa": "Indra (vía Soltel)",
+      "puesto": "Desarrollador Backend",
+      "ubicacion": "Sevilla",
+      "periodo": "Nov 2021 - Dic 2022",
+      "puntos": [
+        "Backend en microservicios Java para el ámbito judicial: gestión de juicios y reservas de salas.",
+        "Desarrollo de servicios SOAP con Spring Boot para el intercambio seguro de datos entre sistemas.",
+        "Manejo de contratos WSDL y pruebas con SOAPUI."
+      ],
+      "tecnologias": ["Java", "Spring Boot", "Microservicios", "SOAP", "WSDL", "SOAPUI", "Oracle", "Docker", "Bitbucket"]
+    },
+    {
+      "empresa": "Coremain",
+      "puesto": "Desarrollador Backend",
+      "ubicacion": "Santiago de Compostela",
+      "periodo": "Feb 2021 - Ago 2021",
+      "puntos": [
+        "Nuevo proyecto Java para Ford basado en microservicios con Spring Boot, en equipo de 5-6 personas.",
+        "Afiancé arquitectura de microservicios con Spring Cloud, Eureka, Ribbon y mensajería con RabbitMQ."
+      ],
+      "tecnologias": ["Java", "Spring Boot", "Spring Cloud", "Hibernate", "Eureka", "Ribbon", "RabbitMQ", "Wildfly", "SQL Server", "Oracle", "Maven", "Gradle", "AWS", "Docker"]
+    },
+    {
+      "empresa": "Plexus Tech",
+      "puesto": "Desarrollador de aplicaciones",
+      "ubicacion": "Santiago de Compostela",
+      "periodo": "Oct 2019 - Jul 2020",
+      "puntos": [
+        "Proyecto SCCOM para hospitales de toda España: desarrollo full-stack (Java backend + JavaScript/HTML/CSS/AJAX).",
+        "Tres meses para el Servicio Gallego de Salud (SERGAS) desarrollando proyectos en .NET/C#, ya en solitario, algunos aún en producción."
+      ],
+      "tecnologias": ["Java", "Spring MVC", "Spring JPA", "Hibernate", "MySQL", ".NET", "C#", "ASP.NET MVC", "JavaScript", "Maven"]
+    }
+  ],
+  "ia": {
+    "titular": "Experiencia en IA generativa aplicada a producto (desde 2024)",
+    "puntos": [
+      "Integración de APIs de IA (OpenAI, DeepSeek) en entornos productivos con Next.js y JavaScript.",
+      "Diseño de prompts y flujos conversacionales para respuestas consistentes adaptadas al contexto de negocio.",
+      "IA generativa en productos reales: análisis inteligente de datos, generación automática de contenido y recomendaciones personalizadas de compra.",
+      "Optimización de rendimiento, latencia y coste en llamadas a modelos de IA en aplicaciones web activas."
+    ]
+  },
+  "educacion": [
+    {
+      "titulo": "Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)",
+      "periodo": "2017 - 2019",
+      "detalle": "Gestión de bases de datos, desarrollo de interfaces, Java, JavaScript, HTML/CSS/XML y desarrollo Android."
+    }
+  ],
+  "extra": [
+    "Certificado validado de React / Redux (financiado por empresa).",
+    "Creador de filtros de realidad aumentada (Spark AR) para Instagram con más de 5.700 millones de visualizaciones acumuladas; desarrollo de scripts para funcionalidades personalizadas.",
+    "Diseño gráfico y motion (Adobe Photoshop, Cinema 4D) y edición de vídeo (Premiere, Sony Vegas, CapCut).",
+    "Futbolista amateur: persona sociable, orientada al trabajo en equipo.",
+    "Proactivo, con gran capacidad de aprendizaje y motivación por retos técnicos."
+  ],
+  "idiomas": [
+    {"idioma": "Español", "nivel": "Nativo"},
+    {"idioma": "Gallego", "nivel": "Nativo"},
+    {"idioma": "Portugués", "nivel": "Buena comprensión"},
+    {"idioma": "Inglés", "nivel": "Intermedio"}
+  ]
+}

@@ -1,0 +1,8 @@
+# Config local de Claude Code
+.claude/
+
+# Dependencias / temporales
+node_modules/
+.vercel/
+*.log
+.DS_Store

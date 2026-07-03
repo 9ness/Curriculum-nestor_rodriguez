@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Néstor Rodríguez Tubío · Desarrollador Backend Senior — Java & IA</title>
+<meta name="description" content="Desarrollador Backend Senior especializado en Java, Spring Boot, microservicios e IA generativa. Descarga mi CV o solicita una entrevista." />
+<style>
+  :root{
+    --bg:#0b0f17; --bg2:#111826; --card:#151d2c; --line:#233149;
+    --txt:#e8edf5; --muted:#9fb0c9; --accent:#5b8cff; --accent2:#22d3a5;
+    --radius:16px; --maxw:960px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(11,15,23,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  nav .name{font-weight:700;font-size:15px}
+  nav .actions{display:flex;gap:10px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-weight:600;font-size:14px;border:1px solid var(--line);transition:.2s;cursor:pointer}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:linear-gradient(135deg,var(--accent),#4f7cf0);border-color:transparent;color:#fff;box-shadow:0 6px 20px rgba(91,140,255,.25)}
+  .btn-ghost{background:var(--card);color:var(--txt)}
+  .btn-sm{padding:7px 12px;font-size:13px}
+  /* HERO */
+  header{padding:64px 0 40px;background:radial-gradient(1200px 500px at 50% -10%,rgba(91,140,255,.18),transparent 60%)}
+  .titular{color:var(--accent2);font-weight:700;letter-spacing:.5px;text-transform:uppercase;font-size:13px;margin-bottom:14px}
+  h1{font-size:clamp(30px,6vw,50px);line-height:1.1;font-weight:800;letter-spacing:-1px}
+  .sub{color:var(--muted);font-size:clamp(16px,2.4vw,20px);margin-top:16px;max-width:640px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .chip{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-size:13.5px;color:var(--muted)}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  /* HIGHLIGHT */
+  .highlight{margin:36px 0;background:linear-gradient(135deg,rgba(34,211,165,.12),rgba(91,140,255,.10));border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .highlight .big{font-size:clamp(26px,5vw,38px);font-weight:800;color:var(--accent2);line-height:1}
+  .highlight .txt{color:var(--muted);font-size:15px}
+  /* SECTIONS */
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  .eyebrow{color:var(--accent);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+  h2{font-size:clamp(22px,4vw,30px);font-weight:800;letter-spacing:-.5px;margin-bottom:20px}
+  p.lead{color:var(--muted);font-size:16px;max-width:720px}
+  /* SKILLS */
+  .skillgroup{margin-bottom:16px}
+  .skillgroup h3{font-size:14px;color:var(--muted);margin-bottom:10px;font-weight:600}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:6px 11px;font-size:13px}
+  .tag.hot{border-color:var(--accent);color:#cdddff}
+  /* TIMELINE */
+  .job{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin-bottom:14px}
+  .job .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+  .job .role{font-weight:700;font-size:17px}
+  .job .co{color:var(--accent);font-weight:600}
+  .job .date{color:var(--muted);font-size:13px;white-space:nowrap}
+  .job ul{margin:0 0 0 18px;color:var(--muted);font-size:14.5px}
+  .job li{margin:4px 0}
+  .job .stack{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+  .job .stack .tag{font-size:12px;padding:4px 9px}
+  /* FORM */
+  .formcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .formrow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  label{display:block;font-size:13px;color:var(--muted);margin:14px 0 6px}
+  input,textarea{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:11px;padding:12px 14px;color:var(--txt);font-size:15px;font-family:inherit}
+  input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+  textarea{min-height:120px;resize:vertical}
+  .formcard .btn-primary{width:100%;justify-content:center;margin-top:18px;font-size:15px;padding:14px}
+  .alt{margin-top:16px;text-align:center;color:var(--muted);font-size:14px}
+  .alt a{color:var(--accent);font-weight:600}
+  #formMsg{margin-top:14px;text-align:center;font-weight:600;display:none}
+  footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  @media(max-width:560px){.formrow{grid-template-columns:1fr}nav .name{font-size:13px}.btn{padding:9px 12px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="name">Néstor Rodríguez Tubío</span>
+    <div class="actions">
+      <a class="btn btn-ghost btn-sm" href="#contacto">Contacto</a>
+      <!-- El CV se sirve desde el mismo directorio: cv.pdf -->
+      <a class="btn btn-primary btn-sm" href="cv.pdf" download>⬇ CV</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="titular">Desarrollador Backend Senior · Java &amp; IA Generativa</div>
+    <h1>Néstor Rodríguez<br>Tubío</h1>
+    <p class="sub">Casi 5 años construyendo backend <strong>Java / Spring Boot</strong> sobre microservicios en entornos críticos, e integrando <strong>IA generativa (OpenAI, DeepSeek)</strong> en productos reales.</p>
+    <div class="chips">
+      <span class="chip">📍 Sevilla · Remoto</span>
+      <span class="chip">✉️ ness4b@gmail.com</span>
+      <!-- TODO: sustituye estos enlaces por los reales -->
+      <a class="chip" href="#" data-todo="linkedin">💼 LinkedIn</a>
+      <a class="chip" href="#" data-todo="github">🐙 GitHub</a>
+    </div>
+    <div class="cta">
+      <a class="btn btn-primary" href="cv.pdf" download>⬇ Descargar CV (PDF)</a>
+      <a class="btn btn-ghost" href="#contacto">📅 Solicitar entrevista</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="highlight">
+    <div class="big">+5.700 M</div>
+    <div class="txt"><strong>visualizaciones</strong> acumuladas en mis filtros de realidad aumentada (Spark AR) para Instagram, con scripts propios. Producto a escala masiva, de principio a fin.</div>
+  </div>
+</div>
+
+<section id="perfil">
+  <div class="wrap">
+    <div class="eyebrow">Perfil</div>
+    <h2>Backend sólido en Java + IA aplicada a producto</h2>
+    <p class="lead">Desarrollador backend senior con casi 5 años construyendo aplicaciones Java (Spring Boot) sobre arquitecturas de microservicios en administración pública, ámbito judicial, automoción y sanidad. Desde 2024 integro IA generativa (OpenAI, DeepSeek) en productos reales —análisis inteligente de datos, generación de contenido y recomendaciones personalizadas— cuidando latencia y coste.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">Tecnologías</div>
+    <h2>Stack</h2>
+    <div class="skillgroup"><h3>Backend &amp; Java</h3><div class="tags">
+      <span class="tag hot">Java (4a 9m)</span><span class="tag hot">Spring Boot</span><span class="tag">Spring Cloud</span><span class="tag">Spring Security</span><span class="tag">JPA / Hibernate</span><span class="tag">SOAP</span><span class="tag">API REST</span>
+    </div></div>
+    <div class="skillgroup"><h3>Arquitectura</h3><div class="tags">
+      <span class="tag hot">Microservicios (3a 2m)</span><span class="tag">Eureka</span><span class="tag">Ribbon</span><span class="tag">RabbitMQ</span><span class="tag">Docker</span><span class="tag">Weblogic</span><span class="tag">Wildfly</span>
+    </div></div>
+    <div class="skillgroup"><h3>IA / GenAI</h3><div class="tags">
+      <span class="tag hot">OpenAI</span><span class="tag hot">DeepSeek</span><span class="tag hot">Ingeniería de prompts</span><span class="tag">Next.js</span><span class="tag">Optimización latencia/coste LLM</span>
+    </div></div>
+    <div class="skillgroup"><h3>Bases de datos &amp; Cloud</h3><div class="tags">
+      <span class="tag">Oracle</span><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">SAP HANA</span><span class="tag">AWS</span><span class="tag">SAP BTP</span><span class="tag">Git</span><span class="tag">Maven / Gradle</span>
+    </div></div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="wrap">
+    <div class="eyebrow">Trayectoria</div>
+    <h2>Experiencia</h2>
+
+    <div class="job">
+      <div class="top"><div><span class="role">Desarrollador Backend</span> · <span class="co">Ayesa</span> — Sevilla</div><div class="date">Ene 2023 – Actualidad</div></div>
+      <ul>
+        <li>Soluciones Java (backend y frontend) para la <strong>Junta de Andalucía</strong> en microservicios y monolíticos.</li>
+        <li>Microservicios Spring Boot integrando <strong>SAP</strong> (BTP Cockpit, SAP HANA Cloud, SAP Logon).</li>
+        <li>Procesamiento y validación de CSV con persistencia; full-stack sobre Weblogic, Oracle y MongoDB.</li>
+      </ul>
+      <div class="stack"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservicios</span><span class="tag">SAP HANA</span><span class="tag">MongoDB</span><span class="tag">Oracle</span><span class="tag">AWS</span></div>
+    </div>
+
+    <div class="job">
+      <div class="top"><div><span class="role">Desarrollador Backend</span> · <span class="co">Indra (vía Soltel)</span> — Sevilla</div><div class="date">Nov 2021 – Dic 2022</div></div>
+      <ul>
+        <li>Microservicios Java para el <strong>ámbito judicial</strong>: gestión de juicios y reservas de salas.</li>
+        <li>Servicios <strong>SOAP con Spring Boot</strong> para intercambio seguro de datos entre sistemas.</li>
+      </ul>
+      <div class="stack"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">SOAP</span><span class="tag">WSDL</span><span class="tag">Oracle</span></div>
+    </div>
+
+    <div class="job">
+      <div class="top"><div><span class="role">Desarrollador Backend</span> · <span class="co">Coremain</span> — Santiago de Compostela</div><div class="date">Feb 2021 – Ago 2021</div></div>
+      <ul>
+        <li>Proyecto Java para <strong>Ford</strong> basado en microservicios con Spring Boot (equipo de 5-6).</li>
+        <li>Spring Cloud, Eureka, Ribbon y mensajería con RabbitMQ.</li>
+      </ul>
+      <div class="stack"><span class="tag">Java</span><span class="tag">Spring Cloud</span><span class="tag">Eureka</span><span class="tag">RabbitMQ</span><span class="tag">Wildfly</span></div>
+    </div>
+
+    <div class="job">
+      <div class="top"><div><span class="role">Desarrollador de aplicaciones</span> · <span class="co">Plexus Tech</span> — Santiago de Compostela</div><div class="date">Oct 2019 – Jul 2020</div></div>
+      <ul>
+        <li>Proyecto <strong>SCCOM</strong> para hospitales de toda España: full-stack (Java + JS/HTML/CSS/AJAX).</li>
+        <li>Tres meses para el <strong>SERGAS</strong> desarrollando en .NET/C# en solitario.</li>
+      </ul>
+      <div class="stack"><span class="tag">Java</span><span class="tag">Spring MVC</span><span class="tag">Hibernate</span><span class="tag">MySQL</span><span class="tag">.NET / C#</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="ia">
+  <div class="wrap">
+    <div class="eyebrow">IA generativa</div>
+    <h2>IA aplicada a producto (desde 2024)</h2>
+    <ul style="color:var(--muted);margin-left:18px;font-size:15.5px;max-width:720px">
+      <li>Integración de APIs de IA (OpenAI, DeepSeek) en producción con Next.js.</li>
+      <li>Diseño de prompts y flujos conversacionales alineados al negocio.</li>
+      <li>IA generativa en productos reales: análisis de datos, generación de contenido y recomendaciones.</li>
+      <li>Optimización de rendimiento, latencia y coste en llamadas a LLMs.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="eyebrow">Hablemos</div>
+    <h2>Solicitar entrevista / contacto</h2>
+    <p class="lead" style="margin-bottom:22px">¿Buscas un backend Java senior con experiencia real en IA? Escríbeme y te respondo en menos de 24h.</p>
+    <div class="formcard">
+      <!--
+        FORMULARIO SIN BACKEND (Web3Forms, gratis):
+        1) Ve a https://web3forms.com, pon tu email ness4b@gmail.com y copia tu Access Key.
+        2) Pega la key en el value de "access_key" (abajo).
+        Mientras no la pongas, el botón "Enviar por email" (fallback mailto) siempre funciona.
+      -->
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="PON_AQUI_TU_ACCESS_KEY_DE_WEB3FORMS" />
+        <input type="hidden" name="subject" value="Contacto desde la web de CV de Néstor" />
+        <input type="checkbox" name="botcheck" style="display:none" />
+        <div class="formrow">
+          <div><label>Nombre</label><input name="name" required placeholder="Tu nombre" /></div>
+          <div><label>Empresa</label><input name="empresa" placeholder="Tu empresa" /></div>
+        </div>
+        <div class="formrow">
+          <div><label>Email</label><input type="email" name="email" required placeholder="tu@empresa.com" /></div>
+          <div><label>Teléfono</label><input name="telefono" placeholder="Opcional" /></div>
+        </div>
+        <label>Mensaje / oferta</label>
+        <textarea name="message" required placeholder="Cuéntame el puesto, stack y condiciones..."></textarea>
+        <button type="submit" class="btn btn-primary">✉️ Enviar mensaje</button>
+        <div id="formMsg"></div>
+      </form>
+      <div class="alt">
+        ¿Prefieres directo? <a href="mailto:ness4b@gmail.com?subject=Oferta%20para%20Néstor">Escríbeme a ness4b@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Néstor Rodríguez Tubío · Desarrollador Backend Senior · Java &amp; IA</div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  var form = document.getElementById('contactForm');
+  var msg = document.getElementById('formMsg');
+  form.addEventListener('submit', async function(e){
+    var key = form.access_key.value;
+    // Si aún no hay Access Key configurada, usar fallback mailto y evitar POST fallido.
+    if(!key || key.indexOf('PON_AQUI')===0){
+      e.preventDefault();
+      var body = encodeURIComponent('Nombre: '+form.name.value+'\nEmpresa: '+(form.empresa.value||'')+'\nEmail: '+form.email.value+'\nTeléfono: '+(form.telefono.value||'')+'\n\n'+form.message.value);
+      window.location.href='mailto:ness4b@gmail.com?subject=Oferta%20para%20Néstor&body='+body;
+      return;
+    }
+    e.preventDefault();
+    msg.style.display='block'; msg.style.color='var(--muted)'; msg.textContent='Enviando...';
+    try{
+      var res = await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+      if(res.ok){ form.reset(); msg.style.color='var(--accent2)'; msg.textContent='✅ ¡Mensaje enviado! Te responderé pronto.'; }
+      else{ throw new Error(); }
+    }catch(err){ msg.style.color='#ff6b6b'; msg.textContent='❌ Error al enviar. Escríbeme a ness4b@gmail.com'; }
+  });
+</script>
+</body>
+</html>

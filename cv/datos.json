@@ -15,26 +15,26 @@
     "github": "https://github.com/9ness",
     "web": "PENDIENTE_DESPLIEGUE_VERCEL"
   },
-  "resumen": "Desarrollador backend senior con casi 5 años de experiencia construyendo aplicaciones Java (Spring Boot) sobre arquitecturas de microservicios en entornos críticos (administración pública, banca judicial, automoción, sanidad). Desde 2024 integro IA generativa (OpenAI, DeepSeek) en productos reales: análisis inteligente de datos, generación automática de contenido y recomendaciones personalizadas, cuidando latencia y coste. Combino solidez en backend Java con experiencia práctica en IA aplicada a producto.",
+  "resumen": "Desarrollador backend senior con más de 6 años de experiencia construyendo aplicaciones Java (Spring Boot) sobre arquitecturas de microservicios en entornos críticos (administración pública, ámbito judicial, automoción, sanidad). Desde 2024 integro IA generativa en productos reales con múltiples proveedores (OpenAI, Claude, Google Gemini, DeepSeek): análisis inteligente de datos, generación de contenido, recomendaciones y orquestación de flujos y agentes de IA, cuidando latencia y coste. Administro además mi propio servidor VPS para desplegar servicios e IA en la nube. Combino solidez en backend Java con experiencia práctica en IA aplicada a producto.",
   "skills": {
     "lenguajes": ["Java", "JavaScript", "C# / .NET", "SQL", "HTML/CSS"],
     "frameworks_backend": ["Spring Boot", "Spring Cloud", "Spring Security", "Spring MVC", "JPA / Hibernate", "Servicios SOAP", "API REST"],
     "microservicios": ["Arquitectura de microservicios", "Eureka", "Ribbon", "RabbitMQ", "Docker", "Weblogic", "Wildfly"],
-    "ia": ["Integración de APIs de IA (OpenAI, DeepSeek)", "Ingeniería de prompts", "IA generativa en producto", "Next.js", "Optimización de latencia y coste en LLMs"],
+    "ia": ["Integración de APIs de IA (OpenAI, Claude, Google Gemini, DeepSeek)", "Ingeniería de prompts", "Orquestación de flujos y agentes de IA", "IA generativa en producto", "Next.js", "Optimización de latencia y coste en LLMs"],
     "bases_de_datos": ["Oracle SQL", "SQL Server", "MySQL", "MongoDB", "SAP HANA"],
-    "cloud_devops": ["Amazon AWS", "Docker", "Git / GitHub / Bitbucket", "Maven", "Gradle", "Jira", "SAP BTP"],
+    "cloud_devops": ["Servidor VPS propio (administración y despliegue)", "Despliegue de IA y servicios en la nube", "Amazon AWS", "Docker", "Git / GitHub / Bitbucket", "Maven", "Gradle", "Jira", "SAP BTP"],
     "testing": ["JUnit", "Mockito", "SOAPUI"],
     "frontend": ["JavaScript", "React / Redux", "XHTML/JSP", "AJAX", "HTML/CSS"]
   },
   "experiencia_tecnica_resumen": {
-    "Java": "4 años y 9 meses",
-    "Spring Boot": "2 años y 4 meses",
-    "Microservicios": "3 años y 2 meses",
-    "Frontend": "1 año y 10 meses",
-    "IA aplicada": "1 año y 7 meses",
-    "Integración de APIs de IA (OpenAI, DeepSeek)": "1 año y 4 meses",
+    "Java": "5 años y 9 meses",
+    "Spring Boot": "3 años y 4 meses",
+    "Microservicios": "4 años y 2 meses",
+    "Frontend": "2 años",
+    "IA aplicada": "2 años y 6 meses",
+    "Integración de APIs de IA (OpenAI, Claude, Gemini, DeepSeek)": "2 años y 4 meses",
     ".NET": "8 meses",
-    "MongoDB": "5 meses"
+    "MongoDB": "1 año"
   },
   "experiencia": [
     {
@@ -88,9 +88,10 @@
   "ia": {
     "titular": "Experiencia en IA generativa aplicada a producto (desde 2024)",
     "puntos": [
-      "Integración de APIs de IA (OpenAI, DeepSeek) en entornos productivos con Next.js y JavaScript.",
-      "Diseño de prompts y flujos conversacionales para respuestas consistentes adaptadas al contexto de negocio.",
-      "IA generativa en productos reales: análisis inteligente de datos, generación automática de contenido y recomendaciones personalizadas de compra.",
+      "Integración de APIs de múltiples proveedores de IA (OpenAI, Claude, Google Gemini, DeepSeek) en entornos productivos con Next.js y JavaScript.",
+      "Diseño de prompts, flujos conversacionales y orquestación de agentes de IA para automatizar tareas.",
+      "IA generativa en productos reales: análisis inteligente de datos, generación de contenido y recomendaciones personalizadas.",
+      "Administración de servidor VPS propio para desplegar servicios e IA en la nube (varios flujos en funcionamiento).",
       "Optimización de rendimiento, latencia y coste en llamadas a modelos de IA en aplicaciones web activas."
     ]
   },

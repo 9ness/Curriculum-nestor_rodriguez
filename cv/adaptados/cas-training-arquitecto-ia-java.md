@@ -11,12 +11,12 @@
 
 📍 Sevilla · 100% remoto · ✉️ ness4b@gmail.com · 📱 638 412 999 · 💼 [LinkedIn](https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171) · 🐙 [github.com/9ness](https://github.com/9ness)
 
-**Perfil** — Desarrollador **Java senior (casi 5 años)** especializado en **Spring Boot y arquitecturas de microservicios**, con más de **1,5 años aplicando IA generativa en producto**: integración de APIs de IA (OpenAI, DeepSeek), **ingeniería de prompts** y diseño de flujos conversacionales. Experiencia en entornos críticos (administración pública, judicial, automoción, sanidad). Titulado en **FP de Grado Superior (DAM)**.
+**Perfil** — Desarrollador **Java senior (más de 6 años)** especializado en **Spring Boot y arquitecturas de microservicios**, con más de **2 años aplicando IA generativa en producto**: integración de APIs de IA (OpenAI, Claude, Google Gemini, DeepSeek), **ingeniería de prompts**, **orquestación de agentes** y diseño de flujos conversacionales. Administro mi propio **servidor VPS** para desplegar IA en la nube. Experiencia en entornos críticos (administración pública, judicial, automoción, sanidad). Titulado en **FP de Grado Superior (DAM)**.
 
 ## Tecnologías (alineadas a la oferta)
 **Java & Spring:** Java (8/11/17) · Spring Boot · Spring Security · Spring Cloud · JPA/Hibernate · **API REST y SOAP** · OpenAPI
 **Arquitectura:** Microservicios · Eureka · Ribbon · **mensajería RabbitMQ** · Docker · Weblogic/Wildfly
-**IA Generativa:** Integración de APIs de IA (**OpenAI, DeepSeek**) · **Ingeniería de prompts** · flujos conversacionales · IA generativa en producto (Next.js) · optimización de latencia y coste
+**IA Generativa:** Integración de APIs de IA (**OpenAI, Claude, Google Gemini, DeepSeek**) · **Ingeniería de prompts** · **agentes autónomos** · flujos conversacionales · IA generativa en producto (Next.js) · VPS propio para IA en la nube · optimización de latencia y coste
 **Datos:** Oracle · **MongoDB** · SQL Server · MySQL · SAP HANA
 **DevOps/Cloud:** AWS · Docker · Git/GitHub/Bitbucket · Maven/Gradle · JUnit/Mockito
 
@@ -51,10 +51,10 @@ Español y Gallego (nativo) · Portugués (buena comprensión) · Inglés (inter
 ## 📊 Encaje con la oferta
 | Requisito | Estado | Respaldo real |
 |---|---|---|
-| Java 8/11/17 + Spring Boot | ✅ Cumple | 4a 9m Java, 2a 4m Spring Boot |
-| Microservicios | ✅ Cumple | 3a 2m; Ford, Indra, Ayesa |
+| Java 8/11/17 + Spring Boot | ✅ Cumple | 5a 9m Java, 3a 4m Spring Boot |
+| Microservicios | ✅ Cumple | 4a 2m; Ford, Indra, Ayesa |
 | APIs REST y **SOAP** | ✅ Cumple | Servicios SOAP en Indra |
-| IA Generativa + **prompts** | ✅ Cumple | 1a 7m IA; OpenAI/DeepSeek, prompts |
+| IA Generativa + **prompts/agentes** | ✅ Cumple | 2a 6m IA; OpenAI/Claude/Gemini/DeepSeek, prompts, agentes |
 | Oracle / MongoDB | ✅ Cumple | Ambas en Ayesa |
 | Kafka / IBM MQ | 🟡 Parcial | Mensajería con **RabbitMQ** (transferible) |
 | Angular | 🟡 Parcial | Frontend con **JavaScript / React-Redux** (no Angular aún) |
@@ -64,4 +64,4 @@ Español y Gallego (nativo) · Portugués (buena comprensión) · Inglés (inter
 ## ✉️ Mensaje para enviar
 > Asunto: Candidatura — Java Senior + IA Generativa (Arquitecto/a IA Java Angular)
 >
-> Hola, me encaja mucho vuestra oferta de Arquitecto/a IA Java Angular. Llevo casi 5 años en **Java/Spring Boot y microservicios** (administración pública, judicial, automoción) y desde 2024 integro **IA generativa en producto**: APIs de OpenAI y DeepSeek, **ingeniería de prompts** y flujos conversacionales sobre Next.js. Cumplo el mínimo de 4 años de desarrollo + 1 de IA generativa y soy titulado en FP de Grado Superior (DAM). En frontend vengo de JavaScript/React y me adapto rápido a Angular. ¿Podríamos hablar 15 minutos? Os dejo mi CV y portfolio: [enlace]. Un saludo, Néstor.
+> Hola, me encaja mucho vuestra oferta de Arquitecto/a IA Java Angular. Llevo más de 6 años en **Java/Spring Boot y microservicios** (administración pública, judicial, automoción) y desde 2024 integro **IA generativa en producto**: APIs de OpenAI, Claude, Gemini y DeepSeek, **ingeniería de prompts**, **agentes** y flujos conversacionales sobre Next.js, además de administrar mi propio **VPS** para desplegar IA en la nube. Supero el mínimo de 4 años de desarrollo + 1 de IA generativa (tengo 2a 6m) y soy titulado en FP de Grado Superior (DAM). En frontend vengo de JavaScript/React y me adapto rápido a Angular. ¿Podríamos hablar 15 minutos? Os dejo mi CV y portfolio: [enlace]. Un saludo, Néstor.

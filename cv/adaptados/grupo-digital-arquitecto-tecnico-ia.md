@@ -11,11 +11,11 @@
 
 📍 Sevilla · 100% remoto · ✉️ ness4b@gmail.com · 📱 638 412 999 · 💼 [LinkedIn](https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171) · 🐙 [github.com/9ness](https://github.com/9ness)
 
-**Perfil** — Desarrollador **Java senior** con casi 5 años diseñando e implementando **arquitecturas de microservicios** en entornos corporativos críticos, y **1,5+ años integrando soluciones de IA / LLM en producto**: APIs de OpenAI y DeepSeek, **diseño de flujos conversacionales** y definición de casos de uso de IA aplicados al negocio. Combino desarrollo backend sólido con criterio de arquitectura.
+**Perfil** — Desarrollador **Java senior** con más de 6 años diseñando e implementando **arquitecturas de microservicios** en entornos corporativos críticos, y **2+ años integrando soluciones de IA / LLM en producto**: APIs de OpenAI, Claude, Google Gemini y DeepSeek, **diseño de flujos conversacionales**, **orquestación de agentes** y definición de casos de uso de IA. Administro mi propio **servidor VPS** para desplegar IA en la nube. Combino desarrollo backend sólido con criterio de arquitectura.
 
 ## Tecnologías (alineadas a la oferta)
 **Java & arquitectura:** Java · Spring Boot · Spring Cloud · microservicios · API REST y SOAP · diseño de arquitecturas (monolítico y microservicios)
-**IA / LLM:** Integración de **LLMs vía API (OpenAI, DeepSeek)** · **diseño de flujos conversacionales** · ingeniería de prompts · definición de casos de uso de IA · optimización de latencia y coste (Next.js)
+**IA / LLM:** Integración de **LLMs vía API (OpenAI, Claude, Google Gemini, DeepSeek)** · **diseño de flujos conversacionales** · **orquestación de agentes** · ingeniería de prompts · definición de casos de uso de IA · VPS propio para IA en la nube · optimización de latencia y coste (Next.js)
 **Datos & Cloud:** Oracle · MongoDB · SAP HANA · AWS · Docker · Git · RabbitMQ
 
 ## Experiencia
@@ -49,8 +49,8 @@ Español y Gallego (nativo) · Portugués (buena comprensión) · Inglés (inter
 ## 📊 Encaje con la oferta
 | Requisito | Estado | Respaldo real |
 |---|---|---|
-| Java sólido | ✅ Cumple | 4a 9m; núcleo de toda su carrera |
-| **LLM / IA** | ✅ Cumple | Integración OpenAI/DeepSeek (LLMs) en producto |
+| Java sólido | ✅ Cumple | 5a 9m; núcleo de toda su carrera |
+| **LLM / IA** | ✅ Cumple | Integración OpenAI/Claude/Gemini/DeepSeek (LLMs) + agentes en producto |
 | **Canal conversacional IA** | ✅ Cumple | Diseño de flujos conversacionales con IA |
 | Arquitecturas de software | ✅ Cumple | Diseño de microservicios (Indra, Coremain, Ayesa) |
 | Casos de uso de IA corporativos | ✅ Cumple | Análisis de datos, recomendaciones en producto real |
@@ -61,4 +61,4 @@ Español y Gallego (nativo) · Portugués (buena comprensión) · Inglés (inter
 ## ✉️ Mensaje para enviar
 > Asunto: Candidatura — Java Senior con integración de IA/LLM en producto
 >
-> Hola, me interesa mucho vuestra posición de Arquitecto/a Técnico/a IA. Llevo casi 5 años desarrollando y **diseñando arquitecturas de microservicios en Java/Spring Boot** en entornos corporativos, y desde 2024 **integro IA/LLM en producto**: OpenAI y DeepSeek, **diseño de flujos conversacionales** y definición de casos de uso de IA para negocio. Encajo con el foco de un canal conversacional basado en IA. ¿Os viene bien una llamada de 15 minutos? Adjunto CV y portfolio: [enlace]. Gracias, Néstor.
+> Hola, me interesa mucho vuestra posición de Arquitecto/a Técnico/a IA. Llevo más de 6 años desarrollando y **diseñando arquitecturas de microservicios en Java/Spring Boot** en entornos corporativos, y desde 2024 **integro IA/LLM en producto**: OpenAI, Claude, Gemini y DeepSeek, **diseño de flujos conversacionales**, **agentes** y definición de casos de uso de IA para negocio, además de administrar mi propio **VPS** para desplegar IA en la nube. Encajo con el foco de un canal conversacional basado en IA. ¿Os viene bien una llamada de 15 minutos? Adjunto CV y portfolio: [enlace]. Gracias, Néstor.

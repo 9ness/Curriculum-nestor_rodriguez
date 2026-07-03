@@ -7,7 +7,7 @@
 
 ## Perfil
 
-Desarrollador backend senior con **casi 5 años de experiencia** construyendo aplicaciones **Java (Spring Boot)** sobre **arquitecturas de microservicios** en entornos críticos: administración pública, ámbito judicial, automoción y sanidad. Desde 2024 **integro IA generativa (OpenAI, DeepSeek) en productos reales** —análisis inteligente de datos, generación automática de contenido y recomendaciones personalizadas— cuidando la latencia y el coste. Uno **la solidez del backend Java con experiencia práctica en IA aplicada a producto**.
+Desarrollador backend senior con **más de 6 años de experiencia** construyendo aplicaciones **Java (Spring Boot)** sobre **arquitecturas de microservicios** en entornos críticos: administración pública, ámbito judicial, automoción y sanidad. Desde 2024 **integro IA generativa en productos reales con múltiples proveedores (OpenAI, Claude, Google Gemini, DeepSeek)** —análisis inteligente de datos, generación de contenido, recomendaciones y **orquestación de flujos y agentes**— cuidando la latencia y el coste. Administro además **mi propio servidor VPS** para desplegar servicios e IA en la nube. Uno **la solidez del backend Java con experiencia práctica en IA aplicada a producto**.
 
 ---
 
@@ -15,13 +15,13 @@ Desarrollador backend senior con **casi 5 años de experiencia** construyendo ap
 
 **Backend & Java:** Java · Spring Boot · Spring Cloud · Spring Security · JPA / Hibernate · Servicios SOAP · API REST
 **Arquitectura:** Microservicios · Eureka · Ribbon · RabbitMQ · Docker · Weblogic · Wildfly
-**IA / GenAI:** Integración de APIs de IA (OpenAI, DeepSeek) · Ingeniería de prompts · IA generativa en producto · Next.js · Optimización de latencia y coste en LLMs
+**IA / GenAI:** Integración de APIs de IA (OpenAI, Claude, Google Gemini, DeepSeek) · Ingeniería de prompts · Orquestación de flujos y agentes de IA · IA generativa en producto · Next.js · Optimización de latencia y coste en LLMs
 **Bases de datos:** Oracle · SQL Server · MySQL · MongoDB · SAP HANA
-**Cloud & DevOps:** AWS · Docker · Git / GitHub / Bitbucket · Maven · Gradle · Jira · SAP BTP
+**Cloud & DevOps:** Servidor VPS propio (administración y despliegue) · Despliegue de IA/servicios en la nube · AWS · Docker · Git / GitHub / Bitbucket · Maven · Gradle · Jira · SAP BTP
 **Testing:** JUnit · Mockito · SOAPUI
 **Frontend:** JavaScript · React / Redux · JSP/XHTML · HTML/CSS
 
-**Años por tecnología:** Java (4a 9m) · Microservicios (3a 2m) · Spring Boot (2a 4m) · IA aplicada (1a 7m) · Integración de APIs de IA (1a 4m)
+**Años por tecnología (a julio 2026):** Java (5a 9m) · Microservicios (4a 2m) · Spring Boot (3a 4m) · IA aplicada (2a 6m) · Integración de APIs de IA (2a 4m)
 
 ---
 
@@ -58,9 +58,10 @@ Desarrollador backend senior con **casi 5 años de experiencia** construyendo ap
 
 ## IA generativa aplicada a producto (desde 2024)
 
-- **Integración de APIs de IA** (OpenAI, DeepSeek) en entornos productivos con **Next.js** y JavaScript.
-- **Diseño de prompts** y flujos conversacionales para respuestas consistentes adaptadas al contexto de negocio.
-- IA generativa en **productos reales**: análisis inteligente de datos, generación automática de contenido y recomendaciones personalizadas de compra.
+- **Integración de APIs de múltiples proveedores de IA** (OpenAI, Claude, Google Gemini, DeepSeek) en entornos productivos con **Next.js** y JavaScript.
+- **Diseño de prompts, flujos conversacionales y orquestación de agentes de IA** para automatizar tareas.
+- IA generativa en **productos reales**: análisis inteligente de datos, generación de contenido y recomendaciones personalizadas.
+- **Administración de servidor VPS propio** para desplegar servicios e IA en la nube (varios flujos en funcionamiento).
 - **Optimización de rendimiento, latencia y coste** en llamadas a modelos de IA en aplicaciones web activas.
 
 ---

@@ -9,7 +9,7 @@
 ## Néstor Rodríguez Tubío
 ### Desarrollador Java Senior · IA Generativa & Microservicios
 
-📍 Sevilla · 100% remoto · ✉️ ness4b@gmail.com · 📱 *[teléfono]* · 💼 *[LinkedIn]* · 🐙 *[GitHub]*
+📍 Sevilla · 100% remoto · ✉️ ness4b@gmail.com · 📱 638 412 999 · 💼 [LinkedIn](https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171) · 🐙 [github.com/9ness](https://github.com/9ness)
 
 **Perfil** — Desarrollador **Java senior (casi 5 años)** especializado en **Spring Boot y arquitecturas de microservicios**, con más de **1,5 años aplicando IA generativa en producto**: integración de APIs de IA (OpenAI, DeepSeek), **ingeniería de prompts** y diseño de flujos conversacionales. Experiencia en entornos críticos (administración pública, judicial, automoción, sanidad). Titulado en **FP de Grado Superior (DAM)**.
 

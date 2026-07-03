@@ -1,7 +1,7 @@
 # Néstor Rodríguez Tubío
 ### Desarrollador Backend Senior · Java & IA Generativa
 
-📍 Sevilla, España (abierto a remoto) · ✉️ ness4b@gmail.com · 📱 *[teléfono]* · 💼 *[LinkedIn]* · 🐙 *[GitHub]*
+📍 Sevilla, España (abierto a remoto) · ✉️ ness4b@gmail.com · 📱 638 412 999 · 💼 [LinkedIn](https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171) · 🐙 [github.com/9ness](https://github.com/9ness)
 
 ---
 

@@ -176,18 +176,17 @@ def build(data, out, adapt=None):
     story += contact_chips(p)
     story.append(HRFlowable(width="100%", thickness=1.4, color=ACCENT, spaceBefore=4, spaceAfter=5))
 
-    cards = adapt["cards"] if adapt and adapt.get("cards") else [
+    # Tarjetas-resumen SOBRE EL CANDIDATO (no sobre las condiciones de la oferta).
+    # El "encaje/checks" es información interna para el panel, NO se imprime en el CV
+    # que se envía a la empresa (quedaría presuntuoso). La adaptación al puesto se hace
+    # con el titular, el orden de tecnologías (skills_order) y el perfil.
+    cards = [
         ["6+ años", "Java · Spring Boot · Microservicios"],
         ["IA en producción", "OpenAI · Claude · Gemini · agentes"],
         ["VPS propio", "Despliegue de IA en la nube"],
         ["+5.700 M", "visualizaciones (AR / IA)"],
     ]
     story += stat_cards([tuple(c) for c in cards])
-
-    # Recuadro de encaje (solo versiones adaptadas)
-    if adapt and adapt.get("checks"):
-        story += section(f'Encaje con la oferta · {adapt.get("puesto","")} @ {adapt.get("empresa","")}')
-        story += check_grid(adapt["checks"])
 
     story += section("Perfil")
     perfil = adapt.get("perfil") if adapt and adapt.get("perfil") else data.get("perfil_corto", data["resumen"])

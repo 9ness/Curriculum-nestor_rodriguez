@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Seguimiento de candidaturas · Néstor</title>
+<meta name="robots" content="noindex" />
+<style>
+  :root{--bg:#0b0f17;--card:#151d2c;--bg2:#111826;--line:#233149;--txt:#e8edf5;--muted:#9fb0c9;--accent:#5b8cff;--green:#22d3a5;--amber:#f0b357;--grey:#6b7891}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:820px;margin:0 auto;padding:0 18px}
+  header{padding:36px 0 8px;background:radial-gradient(800px 360px at 50% -20%,rgba(91,140,255,.16),transparent 60%)}
+  .eyebrow{color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:12px}
+  h1{font-size:clamp(23px,5vw,32px);font-weight:800;margin-top:6px}
+  .sub{color:var(--muted);margin-top:8px;font-size:14.5px}
+  .nav{display:flex;gap:14px;margin-top:14px;font-size:14px}
+  .nav a{color:var(--accent);font-weight:600}
+  .summary{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 6px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 14px;font-size:13px;color:var(--muted)}
+  .stat b{color:var(--txt);font-size:16px}
+  .list{padding:14px 0 50px;display:flex;flex-direction:column;gap:14px}
+  .row{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .co{color:var(--accent);font-weight:700;font-size:13px}
+  .role{font-weight:700;font-size:16px;margin:2px 0 2px}
+  .date{color:var(--muted);font-size:12.5px;margin-bottom:10px}
+  .states{display:flex;flex-wrap:wrap;gap:7px}
+  .st{border:1px solid var(--line);background:var(--bg2);color:var(--muted);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;cursor:pointer;transition:.15s}
+  .st.active[data-s="Enviada"]{background:var(--accent);color:#04122e;border-color:transparent}
+  .st.active[data-s="Respondida"]{background:var(--amber);color:#3a2a02;border-color:transparent}
+  .st.active[data-s="Entrevista"]{background:var(--green);color:#04231a;border-color:transparent}
+  .st.active[data-s="Oferta"]{background:#7CFFB2;color:#043318;border-color:transparent}
+  .st.active[data-s="Descartada"]{background:var(--grey);color:#fff;border-color:transparent}
+  .note{margin-top:10px}
+  .note input{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:9px 12px;color:var(--txt);font-size:13.5px;font-family:inherit}
+  .note input:focus{outline:none;border-color:var(--accent)}
+  .links{margin-top:8px;font-size:12.5px}
+  .links a{color:var(--accent);font-weight:600}
+  footer{padding:26px 0;text-align:center;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line)}
+  .savehint{color:var(--muted);font-size:12px;margin-top:4px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Panel privado</div>
+    <h1>Seguimiento de candidaturas</h1>
+    <p class="sub">Pulsa un estado para actualizarlo. Se guarda en <b>este dispositivo</b> (no se comparte).</p>
+    <div class="nav"><a href="ofertas.html">← Ofertas</a><a href="preparacion.html">Preparación →</a><a href="index.html">Mi web</a></div>
+    <div class="summary" id="summary"></div>
+  </div>
+</header>
+<div class="wrap"><div class="list" id="list"></div></div>
+<footer><div class="wrap">Actualiza el estado según avances. Objetivo: 35-45k · Java + IA · remoto.</div></footer>
+
+<script>
+  const OFERTAS = [
+    {id:"cas-ia", empresa:"CAS Training", puesto:"Arquitecto/a IA Java Angular", fecha:"04/07/2026", url:"https://www.tecnoempleo.com/arquitecto-ia-java-angular-cas-training/springboot-apis/rf-1ab810a9727b739c3644"},
+    {id:"grupo-digital", empresa:"Grupo Digital", puesto:"Arquitecto/a Técnico/a IA", fecha:"04/07/2026", url:"https://www.tecnoempleo.com/arquitecto-tecnico-ia-remoto-grupo-digital/java-llm/rf-074d1874925083d28843"},
+    {id:"cib-labs", empresa:"CIB labs", puesto:"Full Stack Java (IA)", fecha:"04/07/2026", url:"https://www.tecnoempleo.com/desarrollador-full-stack-java-cib-labs/bootstrap-html5/rf-e4b91112e2e1a304c34c"},
+    {id:"serem", empresa:"Serem", puesto:"Backend Java Microservicios", fecha:"04/07/2026", url:"https://www.tecnoempleo.com/profesional-backend-java-microservicios-remoto-ser/spring-boot-kafka/rf-2ab7199cf262436c9c48"},
+    {id:"grupo-ns", empresa:"Grupo NS", puesto:"Java Microservicios · Pagos", fecha:"04/07/2026", url:"https://www.tecnoempleo.com/programador-java-microserviciosmedios-pago-grupo-n/medios-pago/rf-7c921187629603ddc642"}
+  ];
+  const STATES = ["Enviada","Respondida","Entrevista","Oferta","Descartada"];
+  const KEY = "seguimiento_v1";
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){ return {}; } };
+  const save = (d) => localStorage.setItem(KEY, JSON.stringify(d));
+  let data = load();
+
+  function setState(id, s){ data[id] = data[id] || {}; data[id].status = s; save(data); render(); }
+  function setNote(id, v){ data[id] = data[id] || {}; data[id].note = v; save(data); renderSummary(); }
+
+  function renderSummary(){
+    const counts = {}; STATES.forEach(s=>counts[s]=0);
+    OFERTAS.forEach(o=>{ const s = (data[o.id]&&data[o.id].status)||"Enviada"; counts[s]++; });
+    document.getElementById("summary").innerHTML =
+      `<span class="stat"><b>${OFERTAS.length}</b> candidaturas</span>` +
+      STATES.map(s=>`<span class="stat"><b>${counts[s]}</b> ${s.toLowerCase()}</span>`).join("");
+  }
+  function render(){
+    const list = document.getElementById("list");
+    list.innerHTML = OFERTAS.map(o=>{
+      const cur = (data[o.id]&&data[o.id].status)||"Enviada";
+      const note = (data[o.id]&&data[o.id].note)||"";
+      return `<div class="row">
+        <div class="co">${o.empresa}</div>
+        <div class="role">${o.puesto}</div>
+        <div class="date">Aplicada: ${o.fecha}</div>
+        <div class="states">${STATES.map(s=>`<span class="st ${s===cur?'active':''}" data-s="${s}" onclick="setState('${o.id}','${s}')">${s}</span>`).join("")}</div>
+        <div class="note"><input type="text" placeholder="Notas: contacto, recruiter, próxima acción..." value="${note.replace(/"/g,'&quot;')}" oninput="setNote('${o.id}', this.value)"></div>
+        <div class="links"><a href="${o.url}" target="_blank" rel="noopener">Ver oferta ↗</a></div>
+      </div>`;
+    }).join("");
+    renderSummary();
+  }
+  render();
+</script>
+</body>
+</html>

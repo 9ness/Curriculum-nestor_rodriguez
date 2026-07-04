@@ -1,0 +1,23 @@
+{
+  "empresa": "CAS Training",
+  "puesto": "Arquitecto/a IA Java Angular",
+  "titular": "Desarrollador Java Senior · IA Generativa & Microservicios",
+  "perfil": "Desarrollador Java senior (6+ años) en Spring Boot y microservicios, con 2+ años de IA generativa en producción (OpenAI, Claude, Gemini, DeepSeek), ingeniería de prompts y agentes. Titulado en FP de Grado Superior (DAM) y con servidor VPS propio para IA en la nube.",
+  "cards": [
+    ["IA Generativa", "OpenAI · Claude · Gemini · agentes"],
+    ["Java 8-21", "Spring Boot · microservicios"],
+    ["REST y SOAP", "OpenAPI · SAP · Oracle · MongoDB"],
+    ["37-44k · sin inglés", "100% remoto — encaja"]
+  ],
+  "skills_order": ["ia", "frameworks_backend", "microservicios", "bases_de_datos", "cloud_devops"],
+  "checks": [
+    {"req": "Java 8/11/17/21 + Spring Boot", "estado": "cumple"},
+    {"req": "Arquitectura de microservicios", "estado": "cumple"},
+    {"req": "IA Generativa + prompts", "estado": "cumple"},
+    {"req": "Agentes autónomos / flujos IA", "estado": "cumple"},
+    {"req": "APIs REST y SOAP · OpenAPI", "estado": "cumple"},
+    {"req": "FP de Grado Superior (DAM)", "estado": "cumple"},
+    {"req": "Angular (vengo de React/JS)", "estado": "parcial"},
+    {"req": "Inglés", "estado": "no"}
+  ]
+}

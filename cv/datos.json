@@ -7,8 +7,8 @@
   "personal": {
     "nombre": "Néstor Rodríguez Tubío",
     "titular": "Desarrollador Backend Senior · Java & IA Generativa",
-    "ubicacion": "Sevilla, España",
-    "disponibilidad": "Abierto a remoto y a Sevilla / Andalucía",
+    "ubicacion": "Padrón (A Coruña), Galicia",
+    "disponibilidad": "En remoto (actualmente para empresa de Sevilla) · disponible en toda España",
     "email": "ness4b@gmail.com",
     "telefono": "638 412 999",
     "linkedin": "https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171",
@@ -41,7 +41,7 @@
     {
       "empresa": "Ayesa",
       "puesto": "Desarrollador Backend",
-      "ubicacion": "Sevilla",
+      "ubicacion": "Sevilla (en remoto)",
       "periodo": "Ene 2023 - Actualidad",
       "puntos": [
         "Desarrollo de soluciones Java (backend y frontend) para la Junta de Andalucía en arquitecturas de microservicios y monolíticas.",

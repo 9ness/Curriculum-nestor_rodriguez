@@ -1,0 +1,4 @@
+# Dependencias del generador de CV (puro Python, sin librerías del sistema)
+# Instalar:  pip install -r tools/requirements.txt
+reportlab>=4.0
+pymupdf>=1.24

@@ -70,6 +70,11 @@
   .alt{margin-top:16px;text-align:center;color:var(--muted);font-size:14px}
   .alt a{color:var(--accent);font-weight:600}
   #formMsg{margin-top:14px;text-align:center;font-weight:600;display:none}
+  .cvwrap{text-align:center}
+  .cvpreview{display:inline-block;position:relative;max-width:520px;width:100%;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.35);transition:.2s}
+  .cvpreview:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .cvpreview img{display:block;width:100%;height:auto}
+  .cvoverlay{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(11,15,23,.9));color:#fff;padding:26px 0 14px;font-weight:700;font-size:14px}
   footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
   @media(max-width:560px){.formrow{grid-template-columns:1fr}nav .name{font-size:13px}.btn{padding:9px 12px}}
 </style>
@@ -93,7 +98,7 @@
     <h1>Néstor Rodríguez<br>Tubío</h1>
     <p class="sub">Más de 6 años construyendo backend <strong>Java / Spring Boot</strong> sobre microservicios en entornos críticos, integrando <strong>IA generativa (OpenAI, Claude, Gemini, DeepSeek)</strong> y agentes en productos reales, con <strong>VPS propio</strong> para desplegar IA en la nube.</p>
     <div class="chips">
-      <span class="chip">📍 Sevilla · Remoto</span>
+      <span class="chip">📍 Padrón (Galicia) · Remoto</span>
       <span class="chip">✉️ ness4b@gmail.com</span>
       <span class="chip">📱 638 412 999</span>
       <a class="chip" href="https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171" target="_blank" rel="noopener">💼 LinkedIn</a>
@@ -101,6 +106,7 @@
     </div>
     <div class="cta">
       <a class="btn btn-primary" href="cv.pdf" download>⬇ Descargar CV (PDF)</a>
+      <a class="btn btn-ghost" href="#cv">👁 Ver CV</a>
       <a class="btn btn-ghost" href="#contacto">📅 Solicitar entrevista</a>
     </div>
   </div>
@@ -112,6 +118,22 @@
     <div class="txt"><strong>visualizaciones</strong> acumuladas en mis filtros de realidad aumentada (Spark AR) para Instagram, con scripts propios. Producto a escala masiva, de principio a fin.</div>
   </div>
 </div>
+
+<section id="cv">
+  <div class="wrap cvwrap">
+    <div class="eyebrow">Currículum</div>
+    <h2>Mi CV de un vistazo</h2>
+    <p class="lead" style="margin:0 auto 20px">Previsualización. Pulsa para abrir el PDF completo o descárgalo.</p>
+    <a class="cvpreview" href="cv.pdf" target="_blank" rel="noopener">
+      <img src="cv-preview.png" alt="Vista previa del CV de Néstor Rodríguez Tubío" loading="lazy" />
+      <span class="cvoverlay">🔍 Ver PDF completo</span>
+    </a>
+    <div class="cta" style="justify-content:center;margin-top:20px">
+      <a class="btn btn-primary" href="cv.pdf" download>⬇ Descargar CV</a>
+      <a class="btn btn-ghost" href="cv.pdf" target="_blank" rel="noopener">👁 Abrir en el navegador</a>
+    </div>
+  </div>
+</section>
 
 <section id="perfil">
   <div class="wrap">

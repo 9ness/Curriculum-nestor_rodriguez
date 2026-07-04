@@ -9,7 +9,7 @@
 ## Néstor Rodríguez Tubío
 ### Desarrollador Java Senior · Integración de IA / LLM en producto
 
-📍 Sevilla · 100% remoto · ✉️ ness4b@gmail.com · 📱 638 412 999 · 💼 [LinkedIn](https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171) · 🐙 [github.com/9ness](https://github.com/9ness)
+📍 Padrón (Galicia) · 100% remoto · ✉️ ness4b@gmail.com · 📱 638 412 999 · 💼 [LinkedIn](https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171) · 🐙 [github.com/9ness](https://github.com/9ness)
 
 **Perfil** — Desarrollador **Java senior** con más de 6 años diseñando e implementando **arquitecturas de microservicios** en entornos corporativos críticos, y **2+ años integrando soluciones de IA / LLM en producto**: APIs de OpenAI, Claude, Google Gemini y DeepSeek, **diseño de flujos conversacionales**, **orquestación de agentes** y definición de casos de uso de IA. Administro mi propio **servidor VPS** para desplegar IA en la nube. Combino desarrollo backend sólido con criterio de arquitectura.
 

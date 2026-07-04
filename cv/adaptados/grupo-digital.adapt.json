@@ -1,0 +1,23 @@
+{
+  "empresa": "Grupo Digital",
+  "puesto": "Arquitecto/a Técnico/a IA (Remoto)",
+  "titular": "Desarrollador Java Senior · Integración de IA / LLM en producto",
+  "perfil": "Desarrollador Java senior (6+ años) diseñando arquitecturas de microservicios en entornos corporativos, con 2+ años integrando IA / LLM en producción (OpenAI, Claude, Gemini, DeepSeek), diseño de flujos conversacionales, agentes y casos de uso de IA. Servidor VPS propio para desplegar IA en la nube.",
+  "cards": [
+    ["IA / LLM", "OpenAI · Claude · Gemini · agentes"],
+    ["Java", "Arquitectura + microservicios"],
+    ["Canal conversacional", "Flujos + prompts"],
+    ["Remoto · sin inglés", "3-5 años — encaja"]
+  ],
+  "skills_order": ["ia", "frameworks_backend", "microservicios", "cloud_devops", "bases_de_datos"],
+  "checks": [
+    {"req": "Java sólido", "estado": "cumple"},
+    {"req": "LLM / IA generativa", "estado": "cumple"},
+    {"req": "Canal conversacional con IA", "estado": "cumple"},
+    {"req": "Arquitectura de software", "estado": "cumple"},
+    {"req": "Casos de uso de IA corporativos", "estado": "cumple"},
+    {"req": "3-5 años de experiencia", "estado": "cumple"},
+    {"req": "Rol formal de Arquitecto", "estado": "parcial"},
+    {"req": "Inglés", "estado": "no"}
+  ]
+}

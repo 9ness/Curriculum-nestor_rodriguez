@@ -1,0 +1,22 @@
+{
+  "empresa": "GFR Technologies",
+  "puesto": "Desarrollador/a Java Microservicios (IA)",
+  "titular": "Desarrollador Java Senior · Microservicios & IA",
+  "perfil": "Desarrollador Java senior (6+ años) en Spring Boot y microservicios, con 2+ años integrando IA generativa en producción (OpenAI, Claude, Gemini, DeepSeek) y agentes. Servidor VPS propio para desplegar IA en la nube.",
+  "cards": [
+    ["Java", "Spring Boot · microservicios"],
+    ["IA en producción", "OpenAI · Claude · Gemini"],
+    ["APIs REST", "Oracle · MongoDB"],
+    ["6+ años", "remoto / híbrido"]
+  ],
+  "skills_order": ["frameworks_backend", "microservicios", "ia", "bases_de_datos", "cloud_devops"],
+  "checks": [
+    {"req": "Java + Spring Boot", "estado": "cumple"},
+    {"req": "Arquitectura de microservicios", "estado": "cumple"},
+    {"req": "Integración de IA", "estado": "cumple"},
+    {"req": "APIs REST", "estado": "cumple"},
+    {"req": "Bases de datos", "estado": "cumple"},
+    {"req": "Madrid (híbrido)", "estado": "parcial"},
+    {"req": "Inglés", "estado": "no"}
+  ]
+}

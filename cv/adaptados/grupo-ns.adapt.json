@@ -1,0 +1,22 @@
+{
+  "empresa": "Grupo NS",
+  "puesto": "Programador/a Java Microservicios · Medios de Pago",
+  "titular": "Desarrollador Java Senior · Microservicios",
+  "perfil": "Desarrollador Java senior (6+ años) en Spring Boot y microservicios para entornos críticos (administración pública, ámbito judicial, automoción, sanidad), con integración de sistemas heterogéneos y APIs seguras. Titulado en FP de Grado Superior (DAM).",
+  "cards": [
+    ["6+ años", "Java · Spring Boot"],
+    ["Microservicios", "APIs REST · SOAP"],
+    ["100% remoto", "encaja"],
+    ["Integración", "Sistemas · Oracle · SAP"]
+  ],
+  "skills_order": ["frameworks_backend", "microservicios", "bases_de_datos", "cloud_devops", "ia"],
+  "checks": [
+    {"req": "Java + Spring Boot", "estado": "cumple"},
+    {"req": "Arquitectura de microservicios", "estado": "cumple"},
+    {"req": "APIs REST y SOAP", "estado": "cumple"},
+    {"req": "Bases de datos Oracle", "estado": "cumple"},
+    {"req": "Sector medios de pago / banca", "estado": "parcial"},
+    {"req": "100% remoto", "estado": "cumple"},
+    {"req": "Inglés", "estado": "no"}
+  ]
+}

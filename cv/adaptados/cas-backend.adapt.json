@@ -1,0 +1,23 @@
+{
+  "empresa": "CAS Training",
+  "puesto": "Desarrollador/a Backend Java - Microservicios",
+  "titular": "Desarrollador Backend Java Senior · Microservicios",
+  "perfil": "Desarrollador backend Java senior (6+ años) experto en Spring Boot y arquitecturas de microservicios para entornos críticos. Experiencia con APIs REST, SOAP, contenedores Docker y bases de datos relacionales y NoSQL. Titulado en FP de Grado Superior (DAM).",
+  "cards": [
+    ["6+ años", "Java · Spring Boot"],
+    ["Microservicios", "APIs REST · Docker"],
+    ["33-36k · remoto", "encaja"],
+    ["Bases de datos", "Oracle · MySQL · Mongo"]
+  ],
+  "skills_order": ["frameworks_backend", "microservicios", "bases_de_datos", "cloud_devops", "ia"],
+  "checks": [
+    {"req": "Java + Spring Boot", "estado": "cumple"},
+    {"req": "Arquitectura de microservicios", "estado": "cumple"},
+    {"req": "APIs REST", "estado": "cumple"},
+    {"req": "Docker / contenedores", "estado": "cumple"},
+    {"req": "PostgreSQL", "estado": "parcial"},
+    {"req": "FP de Grado Superior (DAM)", "estado": "cumple"},
+    {"req": "100% remoto", "estado": "cumple"},
+    {"req": "Inglés", "estado": "no"}
+  ]
+}

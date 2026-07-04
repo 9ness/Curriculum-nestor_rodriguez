@@ -1,0 +1,22 @@
+{
+  "empresa": "CIB labs",
+  "puesto": "Desarrollador/a Full Stack Java",
+  "titular": "Desarrollador Full Stack Java · IA & Automatización",
+  "perfil": "Desarrollador Java senior (6+ años) full-stack (backend Spring Boot + frontend JavaScript/React), con 2+ años aplicando IA generativa y automatización en producción (OpenAI, Claude, Gemini) y agentes. Servidor VPS propio para desplegar IA en la nube.",
+  "cards": [
+    ["IA & automatización", "OpenAI · Claude · Gemini · agentes"],
+    ["Java Full Stack", "Spring Boot · JavaScript/React"],
+    ["Microservicios", "APIs REST"],
+    ["100% remoto", "6+ años"]
+  ],
+  "skills_order": ["frameworks_backend", "ia", "microservicios", "bases_de_datos", "cloud_devops"],
+  "checks": [
+    {"req": "Java + Spring Boot", "estado": "cumple"},
+    {"req": "Full Stack (front JavaScript/React)", "estado": "cumple"},
+    {"req": "IA / automatización", "estado": "cumple"},
+    {"req": "Microservicios · APIs REST", "estado": "cumple"},
+    {"req": "Bases de datos (Oracle/Mongo/MySQL)", "estado": "cumple"},
+    {"req": "100% remoto", "estado": "cumple"},
+    {"req": "Inglés", "estado": "no"}
+  ]
+}

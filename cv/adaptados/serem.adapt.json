@@ -1,0 +1,23 @@
+{
+  "empresa": "Serem",
+  "puesto": "Profesional Backend Java Microservicios (Remoto)",
+  "titular": "Desarrollador Backend Java Senior · Microservicios",
+  "perfil": "Desarrollador backend Java senior (6+ años) especializado en Spring Boot y microservicios para entornos críticos (administración pública, ámbito judicial, automoción, sanidad, banca). Experiencia en APIs REST, SOAP y mensajería. Titulado en FP de Grado Superior (DAM).",
+  "cards": [
+    ["6+ años", "Java · Spring Boot"],
+    ["Microservicios", "APIs REST · SOAP"],
+    ["36k · 100% remoto", "encaja"],
+    ["Entornos críticos", "AAPP · banca · seguros"]
+  ],
+  "skills_order": ["frameworks_backend", "microservicios", "bases_de_datos", "cloud_devops", "ia"],
+  "checks": [
+    {"req": "Java + Spring Boot", "estado": "cumple"},
+    {"req": "Arquitectura de microservicios", "estado": "cumple"},
+    {"req": "APIs REST y SOAP", "estado": "cumple"},
+    {"req": "Mensajería (Kafka)", "estado": "parcial"},
+    {"req": "Bases de datos Oracle / SQL", "estado": "cumple"},
+    {"req": "Sector crítico / seguros", "estado": "cumple"},
+    {"req": "100% remoto", "estado": "cumple"},
+    {"req": "Inglés", "estado": "no"}
+  ]
+}

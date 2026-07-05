@@ -67,7 +67,9 @@ Alternativas:
   - Integración de IA en producto existente: **2.000–6.000 €**
 - Cobra el **50% por adelantado** en proyectos.
 
-> Ojo con los costes de autónomo: cuota (tarifa plana ~80 €/mes el primer año), IVA (21% que repercutes) e IRPF. Con un par de proyectos al mes ya compensa de sobra — el reto es conseguir los clientes, no el dinero por proyecto.
+> **No hace falta darte de alta de autónomo todavía.** Crear el perfil, publicarlo y que te contacten no cuesta nada ni requiere alta. Date de alta **cuando cierres el primer proyecto real** — se tramita en pocos días, incluso justo antes de emitir la primera factura. Darte de alta antes solo generaría gasto mensual sin ingresos.
+>
+> Cuando llegue ese momento, ten en cuenta: cuota (tarifa plana ~80 €/mes el primer año), IVA (21% que repercutes) e IRPF. Con un par de proyectos al mes ya compensa de sobra — el reto es conseguir los clientes, no el dinero por proyecto.
 
 ---
 
@@ -83,9 +85,10 @@ Con red debajo (tu empleo estable), pruebas el mercado sin riesgo. Si entran cli
 
 ---
 
-## 8. Alta de autónomo (resumen rápido)
+## 8. Alta de autónomo (resumen rápido) — **solo cuando tengas el primer cliente**
 
-- Alta en **Hacienda** (modelo 036/037) + **Seguridad Social** (RETA). Puedes hacerlo por internet.
+- **No te des de alta ahora.** El perfil, la web y buscar clientes no requieren alta. Espera a tener un proyecto real cerrado.
+- Cuando llegue: alta en **Hacienda** (modelo 036/037) + **Seguridad Social** (RETA). Puedes hacerlo por internet, se resuelve en días.
 - **Tarifa plana** ~80 €/mes el primer año (si cumples requisitos).
 - Contrata una **gestoría** (~50–70 €/mes): te lleva IVA, IRPF y las declaraciones. Merece la pena para no comerte el papeleo.
 - Compaginar con tu empleo es legal (**pluriactividad**); tu empresa no tiene por qué enterarse mientras no haya conflicto de interés ni uses recursos suyos.

@@ -75,6 +75,11 @@
   .cvpreview:hover{transform:translateY(-3px);border-color:var(--accent)}
   .cvpreview img{display:block;width:100%;height:auto}
   .cvoverlay{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(11,15,23,.9));color:#fff;padding:26px 0 14px;font-weight:700;font-size:14px}
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+  .svc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .svc-card .ico{font-size:26px;margin-bottom:10px}
+  .svc-card h3{font-size:16px;margin-bottom:8px}
+  .svc-card p{color:var(--muted);font-size:14px;line-height:1.55}
   footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
   @media(max-width:560px){.formrow{grid-template-columns:1fr}nav .name{font-size:13px}.btn{padding:9px 12px}}
 </style>
@@ -85,6 +90,7 @@
   <div class="wrap">
     <span class="name">Néstor Rodríguez Tubío</span>
     <div class="actions">
+      <a class="btn btn-ghost btn-sm" href="#servicios">Automatizaciones</a>
       <a class="btn btn-ghost btn-sm" href="#contacto">Contacto</a>
       <!-- El CV se sirve desde el mismo directorio: cv.pdf -->
       <a class="btn btn-primary btn-sm" href="cv.pdf" download>⬇ CV</a>
@@ -107,6 +113,7 @@
     <div class="cta">
       <a class="btn btn-primary" href="cv.pdf" download>⬇ Descargar CV (PDF)</a>
       <a class="btn btn-ghost" href="#cv">👁 Ver CV</a>
+      <a class="btn btn-ghost" href="#servicios">🤖 Automatizaciones</a>
       <a class="btn btn-ghost" href="#contacto">📅 Solicitar entrevista</a>
     </div>
   </div>
@@ -216,6 +223,39 @@
       <li>IA generativa en productos reales: análisis de datos, generación de contenido y recomendaciones.</li>
       <li><strong>Administración de servidor VPS propio</strong> para desplegar servicios e IA en la nube; optimización de latencia y coste en LLMs.</li>
     </ul>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="eyebrow">Proyectos freelance</div>
+    <h2>Automatizo tu empresa con inteligencia artificial</h2>
+    <p class="lead">Además de mi trabajo como backend senior, ayudo a empresas y autónomos a ahorrar horas de trabajo repetitivo integrando IA en sus procesos. Si tienes una tarea que haces una y otra vez, probablemente se pueda automatizar.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="ico">💬</div>
+        <h3>Chatbots y asistentes con IA</h3>
+        <p>Entrenados con la información de tu empresa: web, catálogo, documentos. Responden a tus clientes 24/7.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">📄</div>
+        <h3>Automatización de tareas</h3>
+        <p>Leer y clasificar correos, procesar facturas/PDFs, rellenar hojas de cálculo, mover datos entre sistemas.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">🔌</div>
+        <h3>Integración de IA en tu web o app</h3>
+        <p>OpenAI, Claude, Gemini integrados en tu producto, cuidando latencia y coste.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">🤖</div>
+        <h3>Agentes y flujos automáticos</h3>
+        <p>Encadeno varios pasos por ti: de un correo a una acción completa, sin intervención manual.</p>
+      </div>
+    </div>
+    <div class="cta" style="margin-top:24px">
+      <a class="btn btn-primary" href="#contacto">✉️ Cuéntame tu caso</a>
+    </div>
   </div>
 </section>
 

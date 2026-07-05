@@ -18,9 +18,9 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
   /* NAV */
   nav{position:sticky;top:0;z-index:50;background:rgba(11,15,23,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-  nav .name{font-weight:700;font-size:15px}
-  nav .actions{display:flex;gap:10px}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px;padding-top:10px;padding-bottom:10px;gap:10px}
+  nav .name{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  nav .actions{display:flex;gap:10px;flex-shrink:0}
   .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-weight:600;font-size:14px;border:1px solid var(--line);transition:.2s;cursor:pointer}
   .btn:hover{transform:translateY(-1px)}
   .btn-primary{background:linear-gradient(135deg,var(--accent),#4f7cf0);border-color:transparent;color:#fff;box-shadow:0 6px 20px rgba(91,140,255,.25)}
@@ -81,7 +81,7 @@
   .svc-card h3{font-size:16px;margin-bottom:8px}
   .svc-card p{color:var(--muted);font-size:14px;line-height:1.55}
   footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
-  @media(max-width:560px){.formrow{grid-template-columns:1fr}nav .name{font-size:13px}.btn{padding:9px 12px}}
+  @media(max-width:560px){.formrow{grid-template-columns:1fr}nav .name{font-size:13px;max-width:46%}.btn{padding:9px 12px}nav .actions .nav-extra{display:none}}
 </style>
 </head>
 <body>
@@ -90,8 +90,8 @@
   <div class="wrap">
     <span class="name">Néstor Rodríguez Tubío</span>
     <div class="actions">
-      <a class="btn btn-ghost btn-sm" href="#servicios">Automatizaciones</a>
-      <a class="btn btn-ghost btn-sm" href="#contacto">Contacto</a>
+      <a class="btn btn-ghost btn-sm nav-extra" href="#servicios">Automatizaciones</a>
+      <a class="btn btn-ghost btn-sm nav-extra" href="#contacto">Contacto</a>
       <!-- El CV se sirve desde el mismo directorio: cv.pdf -->
       <a class="btn btn-primary btn-sm" href="cv.pdf" download>⬇ CV</a>
     </div>

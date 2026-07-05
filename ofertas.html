@@ -37,6 +37,12 @@
   .btn-primary{background:linear-gradient(135deg,var(--accent),#4f7cf0);border-color:transparent;color:#fff}
   .btn-ghost{background:var(--bg2);color:var(--txt)}
   .note{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:12px;padding:14px 16px;color:var(--muted);font-size:14px;margin:6px 0 0}
+  .tabs{display:flex;gap:10px;margin:22px 0 0;flex-wrap:wrap}
+  .tab{background:var(--card);border:1px solid var(--line);color:var(--muted);padding:11px 18px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;transition:.15s}
+  .tab:hover{border-color:var(--accent)}
+  .tab.active{background:var(--accent);color:#04122e;border-color:transparent}
+  .tabpanel{display:none}
+  .tabpanel.active{display:block}
   footer{padding:30px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
 </style>
 </head>
@@ -52,6 +58,13 @@
 
 <div class="wrap">
   <p class="note">💡 Recomendado: descarga el CV adaptado, ábrelo para revisarlo, y pulsa “Ver oferta y aplicar”. En Tecnoempleo te inscribes y adjuntas ese PDF. Verifica siempre sueldo y requisitos en la propia oferta antes de aplicar.</p>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="tab-ofertas">🎯 Ofertas (7)</button>
+    <button class="tab" data-tab="tab-startups">🚀 Startups IA (3)</button>
+  </div>
+
+  <div id="tab-ofertas" class="tabpanel active">
   <div class="grid">
 
     <!-- 1 -->
@@ -186,8 +199,10 @@
     </div>
 
   </div>
+  </div><!-- /tab-ofertas -->
 
-  <div class="wrap"><div class="eyebrow" style="margin-top:10px">Startups de IA españolas</div></div>
+  <div id="tab-startups" class="tabpanel">
+  <p class="sub" style="margin:22px 0 0">Startups españolas de IA (encaje por perfil, no aplicadas todavía).</p>
   <div class="grid">
 
     <!-- Startup 1 -->
@@ -245,8 +260,20 @@
     </div>
 
   </div>
+  </div><!-- /tab-startups -->
 </div>
 
 <footer><div class="wrap">Panel privado de Néstor Rodríguez Tubío · actualizado julio 2026 · <a href="index.html" style="color:var(--accent)">mi web</a></div></footer>
+
+<script>
+  document.querySelectorAll('.tab').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.tabpanel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
 </body>
 </html>

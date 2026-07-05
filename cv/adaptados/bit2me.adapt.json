@@ -1,0 +1,21 @@
+{
+  "empresa": "Bit2Me",
+  "puesto": "Java/Kotlin Backend Developer",
+  "titular": "Desarrollador Java Senior · Backend & IA aplicada",
+  "perfil": "Desarrollador Java senior (6+ años) en Spring Boot y microservicios para entornos críticos (banca judicial, administración pública). Desde 2024 integro IA generativa en producción (OpenAI, Claude, Gemini, DeepSeek). Administro mi propio servidor VPS para desplegar servicios en la nube. Titulado en FP de Grado Superior (DAM).",
+  "cards": [
+    ["Java", "Spring Boot · microservicios"],
+    ["Entornos regulados", "banca · AAPP · judicial"],
+    ["IA aplicada", "OpenAI · Claude · Gemini"],
+    ["Remoto", "6+ años"]
+  ],
+  "skills_order": ["frameworks_backend", "microservicios", "bases_de_datos", "ia", "cloud_devops"],
+  "checks": [
+    {"req": "Java/Kotlin + Spring Boot", "estado": "cumple"},
+    {"req": "Microservicios", "estado": "cumple"},
+    {"req": "Sector regulado (fintech/banca)", "estado": "cumple"},
+    {"req": "IA en producto", "estado": "cumple"},
+    {"req": "Remoto", "estado": "cumple"},
+    {"req": "Kotlin específico", "estado": "parcial"}
+  ]
+}

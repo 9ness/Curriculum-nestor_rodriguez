@@ -1,0 +1,21 @@
+{
+  "empresa": "vLex (Vincent AI)",
+  "puesto": "Java Backend Developer",
+  "titular": "Desarrollador Java Senior · IA aplicada a producto legal",
+  "perfil": "Desarrollador Java senior (6+ años) en Spring Boot y microservicios para entornos críticos y regulados (administración pública, ámbito judicial). Desde 2024 integro IA generativa en producción (OpenAI, Claude, Gemini, DeepSeek) con prompts y agentes. Experiencia directa en el ámbito judicial que encaja con el dominio legal de Vincent AI.",
+  "cards": [
+    ["Java", "Spring Boot · microservicios"],
+    ["Ámbito judicial/legal", "experiencia directa (Indra)"],
+    ["IA en producción", "OpenAI · Claude · Gemini"],
+    ["Remoto España/UK", "6+ años"]
+  ],
+  "skills_order": ["frameworks_backend", "microservicios", "ia", "bases_de_datos", "cloud_devops"],
+  "checks": [
+    {"req": "Java + Spring Boot", "estado": "cumple"},
+    {"req": "Microservicios", "estado": "cumple"},
+    {"req": "Dominio legal/judicial", "estado": "cumple"},
+    {"req": "IA generativa", "estado": "cumple"},
+    {"req": "Remoto España/UK", "estado": "cumple"},
+    {"req": "Inglés (equipo UK)", "estado": "parcial"}
+  ]
+}

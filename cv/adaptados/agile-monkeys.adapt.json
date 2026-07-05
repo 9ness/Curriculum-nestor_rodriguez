@@ -1,0 +1,21 @@
+{
+  "empresa": "The Agile Monkeys",
+  "puesto": "Senior Java Backend Developer (AI Studio)",
+  "titular": "Desarrollador Java Senior · Agentes de IA & Microservicios",
+  "perfil": "Desarrollador Java senior (6+ años) en Spring Boot y arquitecturas de microservicios, con 2+ años integrando IA generativa en producción (OpenAI, Claude, Gemini, DeepSeek): orquestación de agentes, ingeniería de prompts y RAG. Administro mi propio servidor VPS para desplegar IA en la nube. Titulado en FP de Grado Superior (DAM).",
+  "cards": [
+    ["Java", "Spring Boot · microservicios · serverless"],
+    ["Agentes de IA", "OpenAI · Claude · Gemini · RAG"],
+    ["6+ años", "Backend en producción"],
+    ["100% remoto", "VPS propio para IA"]
+  ],
+  "skills_order": ["frameworks_backend", "ia", "microservicios", "cloud_devops", "bases_de_datos"],
+  "checks": [
+    {"req": "Java + Spring Boot", "estado": "cumple"},
+    {"req": "Arquitectura de microservicios/serverless", "estado": "cumple"},
+    {"req": "Agentes de IA y RAG", "estado": "cumple"},
+    {"req": "Integración de múltiples proveedores de IA", "estado": "cumple"},
+    {"req": "100% remoto", "estado": "cumple"},
+    {"req": "Inglés (clientes US)", "estado": "parcial"}
+  ]
+}

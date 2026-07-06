@@ -22,6 +22,19 @@
   .card .txt b{display:block;font-size:16px;margin-bottom:2px}
   .card .txt span{color:var(--muted);font-size:13px}
   .logout{display:block;text-align:center;color:var(--muted);font-size:13px;margin-top:6px}
+  .eyebrow2{color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:12px;margin:8px 0 12px}
+  .projects{display:grid;gap:10px;margin-bottom:20px}
+  .proj{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .proj summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:14px 16px}
+  .proj summary::-webkit-details-marker{display:none}
+  .proj summary .ico{font-size:22px;flex-shrink:0}
+  .proj summary b{font-size:15px;display:block}
+  .proj summary .tag{font-size:11px;color:var(--muted);font-weight:600}
+  .proj summary .chev{margin-left:auto;color:var(--muted);font-size:13px;transition:.2s}
+  .proj[open] summary .chev{transform:rotate(90deg)}
+  .proj-body{padding:0 16px 16px 50px}
+  .proj-body p{color:var(--muted);font-size:13.5px;line-height:1.5;margin-bottom:10px}
+  .proj-link{display:inline-block;background:var(--accent);color:#04122e;font-weight:700;font-size:13px;padding:8px 14px;border-radius:9px}
   footer{padding:26px 0;text-align:center;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
 </style>
 </head>
@@ -56,6 +69,82 @@
       <div class="txt"><b>Mi web pública</b><span>CV, descarga y servicios freelance</span></div>
     </a>
   </div>
+  <div class="eyebrow2">Mis proyectos</div>
+  <div class="projects">
+
+    <details class="proj">
+      <summary><span class="ico">🎲</span><span><b>Bet AI Master</b><span class="tag">🔒 requiere login Vercel (es tu cuenta)</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>Quiniela AI: predicción deportiva (fútbol/baloncesto) con IA (Gemini 3 Pro) y análisis en tiempo real. Motor de decisión con prompts especializados.</p>
+        <a class="proj-link" href="https://bet-ai-master-c7l0zzl0a-nestors-projects-06a2a29c.vercel.app" target="_blank" rel="noopener">Abrir →</a>
+      </div>
+    </details>
+
+    <details class="proj">
+      <summary><span class="ico">💪</span><span><b>Fit9ness</b><span class="tag">🌐 público</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>App de entreno + comidas + peso para 2 personas (ness y ana). Next.js + Redis, sin login, progresión automática por reglas.</p>
+        <a class="proj-link" href="https://fitness-life-4rlpgsz1k-nestors-projects-06a2a29c.vercel.app" target="_blank" rel="noopener">Abrir →</a>
+      </div>
+    </details>
+
+    <details class="proj">
+      <summary><span class="ico">🧳</span><span><b>Planificador de Viajes (Rumbo)</b><span class="tag">🌐 público</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>Diario interactivo de viaje: itinerarios por día, gastos compartidos entre dos móviles, sin login. App Android también disponible.</p>
+        <a class="proj-link" href="https://planificadorviajes-f7hor6g2a-nestors-projects-06a2a29c.vercel.app" target="_blank" rel="noopener">Abrir →</a>
+      </div>
+    </details>
+
+    <details class="proj">
+      <summary><span class="ico">🎬</span><span><b>Nebulabs Media</b><span class="tag">🌐 público</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>Panel de cliente para servicio de edición automática de vídeos para TikTok (cortes, subtítulos, CTA). Desde 149€/mes.</p>
+        <a class="proj-link" href="https://nebulabs-media.vercel.app" target="_blank" rel="noopener">Abrir →</a>
+      </div>
+    </details>
+
+    <details class="proj">
+      <summary><span class="ico">🧮</span><span><b>Bet Calculator</b><span class="tag">🔒 requiere login Vercel</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>Calculadora de apuestas/odds.</p>
+        <a class="proj-link" href="https://betcalculator-3ha8l3g6t-nestors-projects-06a2a29c.vercel.app" target="_blank" rel="noopener">Abrir →</a>
+      </div>
+    </details>
+
+    <details class="proj">
+      <summary><span class="ico">🎥</span><span><b>Veo Video Generator</b><span class="tag">🔒 requiere login Vercel</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>Generador de vídeos con IA (Google Veo).</p>
+        <a class="proj-link" href="https://veovideo-1hc4vp3kp-nestors-projects-06a2a29c.vercel.app" target="_blank" rel="noopener">Abrir →</a>
+      </div>
+    </details>
+
+    <details class="proj">
+      <summary><span class="ico">🧩</span><span><b>MamaXaChejei</b><span class="tag">🔒 requiere login Vercel · en construcción</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>Proyecto en fase inicial (boilerplate Next.js), aún sin definir del todo.</p>
+        <a class="proj-link" href="https://mamaxachejei-avcbt1knh-nestors-projects-06a2a29c.vercel.app" target="_blank" rel="noopener">Abrir →</a>
+      </div>
+    </details>
+
+    <details class="proj">
+      <summary><span class="ico">👟</span><span><b>Scanner IA Pisada</b><span class="tag">⚠️ pendiente confirmar URL</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>Escáner de pisada con IA. Su despliegue de Vercel aún no se ha podido verificar — pásame la URL real cuando la tengas a mano.</p>
+      </div>
+    </details>
+
+    <details class="proj">
+      <summary><span class="ico">🖥️</span><span><b>TikTok Automation Factory</b><span class="tag">🌐 VPS propio (Tailscale)</span></span><span class="chev">▶</span></summary>
+      <div class="proj-body">
+        <p>Automatización de vídeos "Tops" para TikTok con Python (Streamlit + MoviePy). Corre en tu VPS Hetzner, accesible por tu red Tailscale.</p>
+        <a class="proj-link" href="https://tiktok-factory.tailbff00e.ts.net/" target="_blank" rel="noopener">Abrir →</a>
+      </div>
+    </details>
+
+  </div>
+
   <a class="logout" href="/api/logout">Cerrar sesión</a>
 </div>
 <footer><div class="wrap">Guarda esta página en el inicio de tu móvil para acceder rápido.</div></footer>

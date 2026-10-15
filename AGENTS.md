@@ -237,9 +237,11 @@ Fuentes, de más a menos fiable:
    todos los proyectos (formato y criterio en su cabecera).
 2. Los repos de `~/proyectos/*` y `~/mi-dot`, `~/asistentes-telegram`: su AGENTS.md /
    CLAUDE.md / README y `git log --since=<última revisión>` para ver qué se hizo y cuándo.
-3. Lo que no está en el VPS (p. ej. el proyecto de Ayesa en curso, como bfs-factura):
-   Néstor pega aquí un resumen pedido a ese chat («qué he hecho y con qué tecnologías,
-   sin datos del cliente») y se guarda en `research/proyectos-trabajo/<proyecto>.md`.
+3. Proyectos de trabajo (Ayesa…), que no están en el VPS: fichas JSON en
+   `~/proyectos/consultas-nestor/trabajo/` (privado; este repo es PÚBLICO, nunca aquí).
+   Si Néstor pide instrucciones para sacar la de un proyecto, dale el prompt de
+   `adaptador-cv/PROMPT_PROYECTO_TRABAJO.md`; cuando traiga la respuesta, guárdala como
+   dice ese fichero.
 
 Pasos:
 1. **Pregunta primero**: ¿sigues en Ayesa? ¿en qué proyecto estás ahora y desde cuándo?
@@ -250,6 +252,12 @@ Pasos:
    (misma regla que `adaptador-cv/PROMPT.md`).
 4. **Propón** los cambios (qué entra, dónde, con qué redacción) y espera su visto bueno
    antes de tocar `cv/datos.json`.
-5. Aplica, regenera el PDF (`python tools/generar_pdf.py`), pon el mes actual como fecha
+5. Pensado para recruiters y filtros ATS: 1 página (2 como mucho), texto seleccionable
+   en una columna clara, experiencia primero y en orden inverso, cada proyecto con 2-4
+   viñetas «verbo + qué + resultado/cifra», tecnologías como palabras clave literales
+   (las de `palabras_clave_ats`), sin barras de nivel ni iconos que el ATS no lee, y los
+   proyectos propios agrupados en «Proyectos» con enlace si son públicos. Mira
+   `cv-preview.png` tras generar y corrige solapes o huecos.
+6. Aplica, regenera el PDF (`python tools/generar_pdf.py`), pon el mes actual como fecha
    del CV y actualiza `logros.md` (entradas nuevas + «Última revisión»).
-6. Commit solo de lo tuyo; push a `master` despliega en Vercel → con su permiso.
+7. Commit solo de lo tuyo; push a `master` despliega en Vercel → con su permiso.

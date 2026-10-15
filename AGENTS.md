@@ -227,3 +227,29 @@ con `estado ∈ {cumple, parcial, no}`. `skills_order` referencia claves de
   y regeneración con `--adapt`.
 - **Ante cualquier duda, pregunta.** No inventes rutas, comandos ni datos del CV.
 - **Mantén un LEARNINGS.md con 1 línea por bug/aprendizaje resuelto.**
+
+---
+
+## 7. Actualizar el CV con lo nuevo (cuando Néstor lo pida)
+
+Fuentes, de más a menos fiable:
+1. `~/proyectos/consultas-nestor/habilidades.md` — lo que anotan los agentes de
+   todos los proyectos (formato y criterio en su cabecera).
+2. Los repos de `~/proyectos/*` y `~/mi-dot`, `~/asistentes-telegram`: su AGENTS.md /
+   CLAUDE.md / README y `git log --since=<última revisión>` para ver qué se hizo y cuándo.
+3. Lo que no está en el VPS (p. ej. el proyecto de Ayesa en curso, como bfs-factura):
+   Néstor pega aquí un resumen pedido a ese chat («qué he hecho y con qué tecnologías,
+   sin datos del cliente») y se guarda en `research/proyectos-trabajo/<proyecto>.md`.
+
+Pasos:
+1. **Pregunta primero**: ¿sigues en Ayesa? ¿en qué proyecto estás ahora y desde cuándo?
+   (cambia de proyecto aunque siga en la misma empresa).
+2. Lee `logros.md` (al final: «Última revisión: AAAA-MM») y revisa solo lo posterior.
+3. Quédate con lo que sirve a una empresa; deja fuera lo personal (juegos, iptv, bots de
+   pareja) salvo que demuestre una habilidad concreta. Nada de inventar ni inflar cifras
+   (misma regla que `adaptador-cv/PROMPT.md`).
+4. **Propón** los cambios (qué entra, dónde, con qué redacción) y espera su visto bueno
+   antes de tocar `cv/datos.json`.
+5. Aplica, regenera el PDF (`python tools/generar_pdf.py`), pon el mes actual como fecha
+   del CV y actualiza `logros.md` (entradas nuevas + «Última revisión»).
+6. Commit solo de lo tuyo; push a `master` despliega en Vercel → con su permiso.

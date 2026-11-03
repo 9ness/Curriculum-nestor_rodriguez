@@ -17,7 +17,7 @@ from reportlab.lib.units import mm
 from reportlab.lib.colors import HexColor
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
-                                TableStyle, HRFlowable)
+                                TableStyle, HRFlowable, KeepTogether)
 from reportlab.lib.styles import ParagraphStyle
 
 ACCENT = HexColor("#2b57c9")
@@ -30,20 +30,24 @@ AMBER = HexColor("#c17d00")
 GREY = HexColor("#6b7891")
 
 PAGE_W, _ = A4
-LM = RM = 15 * mm
+LM = RM = 13.5 * mm
 AVAIL = PAGE_W - LM - RM
 
 S = {
     "name": ParagraphStyle("name", fontName="Helvetica-Bold", fontSize=22, textColor=INK, leading=23),
     "titular": ParagraphStyle("titular", fontName="Helvetica-Bold", fontSize=11.5, textColor=ACCENT, leading=14, spaceBefore=1),
     "chip": ParagraphStyle("chip", fontName="Helvetica", fontSize=8.6, textColor=INK, leading=10),
-    "h2": ParagraphStyle("h2", fontName="Helvetica-Bold", fontSize=10.5, textColor=ACCENT, leading=12, spaceBefore=6, spaceAfter=2),
-    "perfil": ParagraphStyle("perfil", fontName="Helvetica", fontSize=9.6, textColor=INK, leading=12.4),
-    "role": ParagraphStyle("role", fontName="Helvetica-Bold", fontSize=10, textColor=INK, leading=12),
+    "h2": ParagraphStyle("h2", fontName="Helvetica-Bold", fontSize=10.3, textColor=ACCENT, leading=11.6, spaceBefore=4.5, spaceAfter=1.5),
+    "perfil": ParagraphStyle("perfil", fontName="Helvetica", fontSize=9.4, textColor=INK, leading=11.9),
+    "role": ParagraphStyle("role", fontName="Helvetica-Bold", fontSize=10.6, textColor=INK, leading=12.6),
+    "org": ParagraphStyle("org", fontName="Helvetica", fontSize=9, textColor=MUTED, leading=11.4, spaceBefore=0.5),
     "date": ParagraphStyle("date", fontName="Helvetica", fontSize=8.5, textColor=MUTED, leading=12, alignment=2),
-    "bullet": ParagraphStyle("bullet", fontName="Helvetica", fontSize=9.2, textColor=HexColor("#2c3745"), leading=11.8, leftIndent=9, bulletIndent=0),
-    "stack": ParagraphStyle("stack", fontName="Helvetica-Bold", fontSize=8, textColor=ACCENT, leading=10.5, spaceBefore=1),
-    "skill": ParagraphStyle("skill", fontName="Helvetica", fontSize=9.2, textColor=INK, leading=12.2),
+    "datepill": ParagraphStyle("datepill", fontName="Helvetica-Bold", fontSize=7.8, textColor=MUTED, leading=9.4, alignment=1),
+    "bullet": ParagraphStyle("bullet", fontName="Helvetica", fontSize=9.05, textColor=HexColor("#2c3745"), leading=11.3, leftIndent=19, firstLineIndent=-8, spaceBefore=1.2),
+    "stack": ParagraphStyle("stack", fontName="Helvetica-Bold", fontSize=7.9, textColor=ACCENT, leading=10, spaceBefore=2.5, leftIndent=11),
+    "proj": ParagraphStyle("proj", fontName="Helvetica-Bold", fontSize=9.4, textColor=INK, leading=11.4, spaceBefore=3.5),
+    "projnote": ParagraphStyle("projnote", fontName="Helvetica-Oblique", fontSize=8.3, textColor=MUTED, leading=10.2, spaceBefore=1.5, leftIndent=11),
+    "skill": ParagraphStyle("skill", fontName="Helvetica", fontSize=9.0, textColor=INK, leading=11.6),
     "cardbig": ParagraphStyle("cardbig", fontName="Helvetica-Bold", fontSize=10.5, textColor=ACCENT, leading=12, alignment=1),
     "cardsm": ParagraphStyle("cardsm", fontName="Helvetica", fontSize=7.4, textColor=MUTED, leading=8.6, alignment=1),
     "pill": ParagraphStyle("pill", fontName="Helvetica-Bold", fontSize=6.8, textColor=HexColor("#ffffff"), leading=8, alignment=1),
@@ -53,7 +57,8 @@ S = {
 KW = ["Spring Boot", "Spring Cloud", "Spring Security", "Spring MVC", "microservicios",
       "IA generativa", "SAP HANA", "SAP BTP", "SAP", "SOAP", "API REST", "OpenAI",
       "Google Gemini", "Gemini", "Claude", "DeepSeek", "Next.js", "Oracle", "MongoDB",
-      "RabbitMQ", "Weblogic", "Junta de Andalucía", "Ford", "SERGAS", "VPS", "agentes",
+      "RabbitMQ", "Weblogic", "WebLogic", "SonarQube", "SSL/TLS", "XXE",
+      "inyección SQL", "firma electrónica", "entidad bancaria", "Junta de Andalucía", "Ford", "SERGAS", "VPS", "agentes",
       "prompts", "Java", "LLM", "Kafka", "Docker", "AWS", "Angular"]
 
 
@@ -105,7 +110,8 @@ def contact_chips(p):
         label = f'<a href="{href}" color="#1a2333">{markup}</a>' if href else markup
         w = stringWidth(plain, "Helvetica", 8.6) + 16
         return (rounded(Paragraph(label, S["chip"]), SOFT, width=w), w)
-    items = [chip(f'{p["ubicacion"]} · Remoto', f'{p["ubicacion"]} · Remoto', None)]
+    loc = p["ubicacion"].split(",")[0].strip()
+    items = [chip(f'{loc} · Remoto', f'{loc} · Remoto', None)]
     if p.get("email"):
         items.append(chip(f'Email  {p["email"]}', f'<b>Email</b>  {p["email"]}', "mailto:" + p["email"]))
     if p.get("telefono"):
@@ -121,7 +127,7 @@ def contact_chips(p):
 def stat_cards(items):
     n = len(items); gap = 6
     cw = (AVAIL - gap * (n - 1)) / n
-    cards = [(rounded([Paragraph(b, S["cardbig"]), Paragraph(s, S["cardsm"])], CARD, width=cw, pads=(5, 5, 5, 5)), cw)
+    cards = [(rounded([Paragraph(b, S["cardbig"]), Paragraph(s, S["cardsm"])], CARD, width=cw, pads=(5, 5, 4, 4)), cw)
              for b, s in items]
     return _pack(cards, AVAIL, gap=gap)
 
@@ -155,17 +161,47 @@ def section(title):
             HRFlowable(width="100%", thickness=0.6, color=HexColor("#dbe1ec"), spaceBefore=0, spaceAfter=4)]
 
 
-def job(e):
-    left = Paragraph(f'<b>{e["puesto"]}</b> · <font color="#2b57c9"><b>{e["empresa"]}</b></font> — {e["ubicacion"]}', S["role"])
-    head = Table([[left, Paragraph(e["periodo"], S["date"])]], colWidths=[AVAIL * 0.72, AVAIL * 0.28])
+def job(e, last=False):
+    """Un puesto: puesto en negrita, empresa+lugar debajo, fecha en pastilla a la derecha."""
+    periodo = e["periodo"]
+    pw = stringWidth(periodo, "Helvetica-Bold", 7.8) + 14
+    pill = rounded(Paragraph(periodo, S["datepill"]), SOFT, width=pw, pads=(6, 6, 3, 3))
+    pill.hAlign = "RIGHT"
+
+    head = Table([[Paragraph(e["puesto"], S["role"]), pill]], colWidths=[AVAIL - pw - 8, pw + 8])
     head.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0),
-                              ("RIGHTPADDING", (0, 0), (-1, -1), 0), ("TOPPADDING", (0, 0), (-1, -1), 3),
-                              ("BOTTOMPADDING", (0, 0), (-1, -1), 1)]))
-    out = [head]
-    for pt in e["puntos"][:2]:
-        out.append(Paragraph("•&nbsp; " + bold_kw(pt), S["bullet"]))
-    if e.get("tecnologias"):
-        out.append(Paragraph(" · ".join(e["tecnologias"][:8]), S["stack"]))
+                              ("RIGHTPADDING", (0, 0), (-1, -1), 0), ("TOPPADDING", (0, 0), (-1, -1), 0),
+                              ("BOTTOMPADDING", (0, 0), (-1, -1), 0)]))
+
+    org = f'<font color="#2b57c9"><b>{e["empresa"]}</b></font>'
+    if e.get("ubicacion"):
+        org += f'&nbsp;&nbsp;·&nbsp;&nbsp;{e["ubicacion"]}'
+
+    out = [head, Paragraph(org, S["org"]), Spacer(1, 2)]
+    if e.get("proyectos"):
+        # Cabecera del puesto pegada al primer proyecto; cada proyecto no se parte entre páginas.
+        bloques = []
+        # Un puesto con varios proyectos (del más reciente al más antiguo): todas sus viñetas.
+        for pr in e["proyectos"]:
+            b = [Paragraph(f'{pr["nombre"]}&nbsp;&nbsp;<font color="#5c6b82" size="8.2">· {pr["periodo"]}</font>', S["proj"])]
+            for pt in pr["puntos"]:
+                b.append(Paragraph("•&nbsp;&nbsp;" + bold_kw(pt), S["bullet"]))
+            if pr.get("nota"):
+                b.append(Paragraph(pr["nota"], S["projnote"]))
+            if pr.get("tecnologias"):
+                b.append(Paragraph(" · ".join(pr["tecnologias"]), S["stack"]))
+            bloques.append(b)
+        out = [KeepTogether(out + bloques[0])] + [KeepTogether(b) for b in bloques[1:]]
+    else:
+        for pt in e["puntos"][:2]:
+            out.append(Paragraph("•&nbsp;&nbsp;" + bold_kw(pt), S["bullet"]))
+        if e.get("tecnologias"):
+            out.append(Paragraph(" · ".join(e["tecnologias"][:8]), S["stack"]))
+        out = [KeepTogether(out)]
+    if not last:
+        out.append(Spacer(1, 3.5))
+        out.append(HRFlowable(width="100%", thickness=0.5, color=HexColor("#e8ecf4"), spaceBefore=0, spaceAfter=0))
+        out.append(Spacer(1, 3.5))
     return out
 
 
@@ -194,19 +230,20 @@ def build(data, out, adapt=None):
 
     story += section("Tecnologías")
     order = adapt.get("skills_order") if adapt and adapt.get("skills_order") else \
-        ["frameworks_backend", "microservicios", "ia", "bases_de_datos", "cloud_devops"]
-    labels = {"frameworks_backend": "Backend & Java", "microservicios": "Arquitectura",
-              "ia": "IA / GenAI", "bases_de_datos": "Datos", "cloud_devops": "Cloud & DevOps"}
+        ["lenguajes", "frameworks_backend", "microservicios", "seguridad", "ia", "bases_de_datos", "cloud_devops", "testing"]
+    labels = {"lenguajes": "Lenguajes", "frameworks_backend": "Backend & Java", "microservicios": "Arquitectura",
+              "seguridad": "Seguridad", "ia": "IA / GenAI", "bases_de_datos": "Datos",
+              "cloud_devops": "Cloud & DevOps", "testing": "Testing", "frontend": "Frontend"}
     for key in order:
         if data["skills"].get(key):
             story.append(Paragraph(f'<b>{labels[key]}:</b> ' + " · ".join(data["skills"][key]), S["skill"]))
 
     story += section("Experiencia")
-    for e in data["experiencia"]:
-        story += job(e)
+    for i, e in enumerate(data["experiencia"]):
+        story += job(e, last=(i == len(data["experiencia"]) - 1))
 
     story += section("IA generativa aplicada a producto (desde 2024)")
-    for pt in data["ia"]["puntos"][:3]:
+    for pt in data["ia"]["puntos"][:4]:
         story.append(Paragraph("•&nbsp; " + bold_kw(pt), S["bullet"]))
 
     story += section("Formación · Idiomas · Extra")
@@ -216,7 +253,7 @@ def build(data, out, adapt=None):
     story.append(Paragraph(f'<b>Idiomas:</b> {idiomas}', S["skill"]))
     story.append(Paragraph(bold_kw('<b>Extra:</b> Creador de filtros AR (Spark AR) para Instagram con +5.700 M de visualizaciones; certificado React/Redux.'), S["skill"]))
 
-    doc = SimpleDocTemplate(out, pagesize=A4, topMargin=11 * mm, bottomMargin=10 * mm,
+    doc = SimpleDocTemplate(out, pagesize=A4, topMargin=10 * mm, bottomMargin=9 * mm,
                             leftMargin=LM, rightMargin=RM, title=f'CV {p["nombre"]}', author=p["nombre"])
     doc.build(story)
     return out

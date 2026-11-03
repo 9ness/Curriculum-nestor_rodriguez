@@ -1,41 +1,100 @@
 {
   "meta": {
     "descripcion": "Fuente de verdad con los datos del CV de Néstor. El CV maestro (cv-maestro.md) y la web se generan a partir de aquí. Las versiones adaptadas por empresa parten de este mismo contenido.",
-    "actualizado": "2026-07-03",
+    "actualizado": "2026-10-30",
     "regla_de_oro": "NUNCA inventar. Solo reorganizar, reescribir y enfatizar lo que ya es cierto."
   },
   "personal": {
     "nombre": "Néstor Rodríguez Tubío",
-    "titular": "Desarrollador Backend Senior · Java & IA Generativa",
+    "titular": "Desarrollador Backend Senior · Java, Seguridad & IA Generativa",
     "ubicacion": "Padrón (A Coruña), Galicia",
-    "disponibilidad": "En remoto (actualmente para empresa de Sevilla) · disponible en toda España",
+    "disponibilidad": "Trabajo en remoto · disponible para proyectos en toda España",
     "email": "ness4b@gmail.com",
     "telefono": "638 412 999",
     "linkedin": "https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171",
     "github": "https://github.com/9ness",
     "web": "PENDIENTE_DESPLIEGUE_VERCEL"
   },
-  "resumen": "Desarrollador backend senior con más de 6 años de experiencia construyendo aplicaciones Java (Spring Boot) sobre arquitecturas de microservicios en entornos críticos (administración pública, ámbito judicial, automoción, sanidad). Desde 2024 integro IA generativa en productos reales con múltiples proveedores (OpenAI, Claude, Google Gemini, DeepSeek): análisis inteligente de datos, generación de contenido, recomendaciones y orquestación de flujos y agentes de IA, cuidando latencia y coste. Administro además mi propio servidor VPS para desplegar servicios e IA en la nube. Combino solidez en backend Java con experiencia práctica en IA aplicada a producto.",
-  "perfil_corto": "Backend senior con 6+ años en Java/Spring Boot y microservicios para entornos críticos. Desde 2024, IA generativa en producción (OpenAI, Claude, Gemini, DeepSeek) con orquestación de agentes, y servidor VPS propio para desplegar IA en la nube.",
+  "resumen": "Desarrollador backend senior Java con más de 6 años de experiencia en banca, administración pública, ámbito judicial, automoción y sanidad. Construyo aplicaciones Java (Spring Boot, Java EE con JSF, EJB y JPA) sobre microservicios y monolitos en WebLogic y Oracle, y trabajo la seguridad de aplicaciones: remediación de vulnerabilidades detectadas por SonarQube (inyección SQL, validación de certificados SSL/TLS, XXE) y firma electrónica. Desde 2024 integro IA generativa en productos reales con múltiples proveedores (OpenAI, Claude, Google Gemini, DeepSeek) y agentes de código abierto, cuidando latencia y coste, y administro mi propio servidor VPS para desplegar servicios e IA en la nube.",
+  "perfil_corto": "Backend senior Java con más de 6 años de experiencia en banca, administración pública, seguridad de aplicaciones e IA generativa. Spring Boot, microservicios y Java EE (JSF, EJB, JPA) sobre WebLogic y Oracle; remediación de vulnerabilidades con SonarQube (inyección SQL, SSL/TLS, XXE) y firma electrónica. Desde 2024, IA generativa en producto (OpenAI, Claude, Gemini, DeepSeek) y orquestación de agentes sobre servidor VPS propio.",
   "skills": {
-    "lenguajes": ["Java", "JavaScript", "C# / .NET", "SQL", "HTML/CSS"],
-    "frameworks_backend": ["Spring Boot", "Spring Cloud", "Spring Security", "Spring MVC", "JPA / Hibernate", "Servicios SOAP", "API REST"],
-    "microservicios": ["Arquitectura de microservicios", "Eureka", "Ribbon", "RabbitMQ", "Docker", "Weblogic", "Wildfly"],
-    "ia": ["Integración de APIs de IA (OpenAI, Claude, Google Gemini, DeepSeek)", "Ingeniería de prompts", "Orquestación de flujos y agentes de IA", "IA generativa en producto", "Next.js", "Optimización de latencia y coste en LLMs"],
-    "bases_de_datos": ["Oracle SQL", "SQL Server", "MySQL", "MongoDB", "SAP HANA"],
-    "cloud_devops": ["Servidor VPS propio (administración y despliegue)", "Despliegue de IA y servicios en la nube", "Amazon AWS", "Docker", "Git / GitHub / Bitbucket", "Maven", "Gradle", "Jira", "SAP BTP"],
-    "testing": ["JUnit", "Mockito", "SOAPUI"],
-    "frontend": ["JavaScript", "React / Redux", "XHTML/JSP", "AJAX", "HTML/CSS"]
-  },
-  "experiencia_tecnica_resumen": {
-    "Java": "5 años y 9 meses",
-    "Spring Boot": "3 años y 4 meses",
-    "Microservicios": "4 años y 2 meses",
-    "Frontend": "2 años",
-    "IA aplicada": "2 años y 6 meses",
-    "Integración de APIs de IA (OpenAI, Claude, Gemini, DeepSeek)": "2 años y 4 meses",
-    ".NET": "8 meses",
-    "MongoDB": "1 año"
+    "lenguajes": [
+      "Java",
+      "SQL / PL/SQL",
+      "Python",
+      "JavaScript",
+      "C# / .NET",
+      "HTML/CSS"
+    ],
+    "frameworks_backend": [
+      "Spring Boot",
+      "Spring Cloud",
+      "Spring Security",
+      "Spring MVC",
+      "JPA / Hibernate",
+      "JSF / PrimeFaces",
+      "EJB",
+      "API REST (Jersey)",
+      "Servicios SOAP",
+      "iText"
+    ],
+    "microservicios": [
+      "Arquitectura de microservicios",
+      "Eureka",
+      "Ribbon",
+      "RabbitMQ",
+      "Docker",
+      "WebLogic",
+      "Wildfly"
+    ],
+    "seguridad": [
+      "SonarQube",
+      "OWASP",
+      "SSL/TLS",
+      "Inyección SQL",
+      "XXE",
+      "Firma electrónica"
+    ],
+    "ia": [
+      "Integración de APIs de IA (OpenAI, Claude, Google Gemini, DeepSeek)",
+      "Orquestación de agentes de IA (propios y de código abierto)",
+      "Ingeniería de prompts",
+      "IA generativa en producto",
+      "Next.js",
+      "Optimización de latencia y coste en LLMs"
+    ],
+    "bases_de_datos": [
+      "Oracle SQL / PL/SQL",
+      "SQL Server",
+      "MySQL",
+      "MongoDB",
+      "SAP HANA"
+    ],
+    "cloud_devops": [
+      "Servidor VPS propio (administración y despliegue)",
+      "Despliegue de IA y servicios en la nube",
+      "Amazon AWS",
+      "Docker",
+      "Podman / Dev Containers",
+      "Git / GitHub / Bitbucket",
+      "Maven",
+      "Gradle",
+      "Jira",
+      "SAP BTP"
+    ],
+    "testing": [
+      "JUnit",
+      "Mockito",
+      "SOAPUI",
+      "TestLink"
+    ],
+    "frontend": [
+      "JavaScript",
+      "React / Redux",
+      "XHTML/JSP",
+      "AJAX",
+      "HTML/CSS"
+    ]
   },
   "experiencia": [
     {
@@ -43,13 +102,75 @@
       "puesto": "Desarrollador Backend",
       "ubicacion": "Sevilla (en remoto)",
       "periodo": "Ene 2023 - Actualidad",
-      "puntos": [
-        "Desarrollo de soluciones Java (backend y frontend) para la Junta de Andalucía en arquitecturas de microservicios y monolíticas.",
-        "Microservicios Java con Spring Boot integrando el ecosistema SAP (BTP Cockpit, SAP HANA Cloud, SAP Logon).",
-        "Lectura, validación y procesamiento de archivos CSV con persistencia en base de datos.",
-        "Desarrollo full-stack en proyectos con XHTML/JSP y JavaScript, sobre servidores Weblogic y bases de datos Oracle y MongoDB."
-      ],
-      "tecnologias": ["Java", "Spring Boot", "Microservicios", "SAP HANA", "SAP BTP", "MongoDB", "Oracle", "Weblogic", "Docker", "AWS", "JUnit", "Mockito", "API REST"]
+      "proyectos": [
+        {
+          "nombre": "Plataforma de facturación electrónica para una entidad bancaria",
+          "periodo": "Sep 2026 - Actualidad",
+          "puntos": [
+            "Remedié vulnerabilidades de seguridad detectadas por SonarQube en una plataforma con más de 100 repositorios Java (WebLogic, Oracle): inyección SQL en JDBC, validación de certificados SSL/TLS, XXE y otras.",
+            "Analicé y justifiqué ante el cliente los falsos positivos, con documentación técnica de cada caso.",
+            "Inventarié las integraciones con terceros que no validaban certificados, incluidas varias que el análisis automático no detectaba, y definí el patrón común de corrección (TLS 1.2 con el truststore de la JVM) acordado con el equipo.",
+            "Estimé y planifiqué las correcciones críticas y coordiné con sistemas el despliegue sin cortar conexiones en producción."
+          ],
+          "tecnologias": [
+            "Java",
+            "JDBC",
+            "SonarQube",
+            "SSL/TLS",
+            "WebLogic",
+            "Oracle",
+            "Maven",
+            "Git"
+          ]
+        },
+        {
+          "nombre": "Portal de empleo público · Junta de Andalucía",
+          "periodo": "Abr 2025 - Actualidad",
+          "puntos": [
+            "Desarrollé de principio a fin la solicitud y adjudicación de plazas para acceso libre y bolsa de trabajo: formulario reutilizable, PDF, firma electrónica, registro telemático e integración con el sistema de RR. HH. corporativo.",
+            "Rediseñé la custodia documental multi-entorno del microservicio de gestión documental: una sola columna en lugar de cambios en 19 tablas, y cerré un riesgo por el que borrar un documento en preproducción podía eliminar el de producción.",
+            "Migré la configuración por entorno de Maven a base de datos para que la integración continua genere un único WAR para los 4 entornos.",
+            "Resolví la mezcla de logs entre dos aplicaciones desplegadas en el mismo WebLogic y recuperé las trazas de excepción que se perdían en 732 puntos del código.",
+            "Unifiqué los filtros de 66 pantallas con herramientas propias en Python que validan cada cambio automáticamente."
+          ],
+          "nota": "Unos 285 commits en 5 repositorios y más de 50 tareas.",
+          "tecnologias": [
+            "Java 8",
+            "JSF/PrimeFaces",
+            "EJB",
+            "JPA",
+            "REST (Jersey)",
+            "Spring Boot 3",
+            "Oracle PL/SQL",
+            "iText 7",
+            "WebLogic 12.2",
+            "Podman"
+          ]
+        },
+        {
+          "nombre": "Proyectos Java/SAP · Junta de Andalucía",
+          "periodo": "Ene 2023 - Mar 2025",
+          "puntos": [
+            "Desarrollé microservicios Java con Spring Boot integrando el ecosistema SAP (BTP Cockpit, SAP HANA Cloud, SAP Logon).",
+            "Implementé la lectura, validación y procesamiento de archivos CSV con persistencia en base de datos.",
+            "Trabajé full-stack (XHTML/JSP y JavaScript) en arquitecturas de microservicios y monolíticas sobre WebLogic, Oracle y MongoDB."
+          ],
+          "tecnologias": [
+            "Java",
+            "Spring Boot",
+            "Microservicios",
+            "SAP HANA",
+            "SAP BTP",
+            "MongoDB",
+            "Oracle",
+            "WebLogic",
+            "Docker",
+            "AWS",
+            "JUnit",
+            "Mockito"
+          ]
+        }
+      ]
     },
     {
       "empresa": "Indra (vía Soltel)",
@@ -61,7 +182,17 @@
         "Desarrollo de servicios SOAP con Spring Boot para el intercambio seguro de datos entre sistemas.",
         "Manejo de contratos WSDL y pruebas con SOAPUI."
       ],
-      "tecnologias": ["Java", "Spring Boot", "Microservicios", "SOAP", "WSDL", "SOAPUI", "Oracle", "Docker", "Bitbucket"]
+      "tecnologias": [
+        "Java",
+        "Spring Boot",
+        "Microservicios",
+        "SOAP",
+        "WSDL",
+        "SOAPUI",
+        "Oracle",
+        "Docker",
+        "Bitbucket"
+      ]
     },
     {
       "empresa": "Coremain",
@@ -72,7 +203,22 @@
         "Nuevo proyecto Java para Ford basado en microservicios con Spring Boot, en equipo de 5-6 personas.",
         "Afiancé arquitectura de microservicios con Spring Cloud, Eureka, Ribbon y mensajería con RabbitMQ."
       ],
-      "tecnologias": ["Java", "Spring Boot", "Spring Cloud", "Hibernate", "Eureka", "Ribbon", "RabbitMQ", "Wildfly", "SQL Server", "Oracle", "Maven", "Gradle", "AWS", "Docker"]
+      "tecnologias": [
+        "Java",
+        "Spring Boot",
+        "Spring Cloud",
+        "Hibernate",
+        "Eureka",
+        "Ribbon",
+        "RabbitMQ",
+        "Wildfly",
+        "SQL Server",
+        "Oracle",
+        "Maven",
+        "Gradle",
+        "AWS",
+        "Docker"
+      ]
     },
     {
       "empresa": "Plexus Tech",
@@ -83,14 +229,26 @@
         "Proyecto SCCOM para hospitales de toda España: desarrollo full-stack (Java backend + JavaScript/HTML/CSS/AJAX).",
         "Tres meses para el Servicio Gallego de Salud (SERGAS) desarrollando proyectos en .NET/C#, ya en solitario, algunos aún en producción."
       ],
-      "tecnologias": ["Java", "Spring MVC", "Spring JPA", "Hibernate", "MySQL", ".NET", "C#", "ASP.NET MVC", "JavaScript", "Maven"]
+      "tecnologias": [
+        "Java",
+        "Spring MVC",
+        "Spring JPA",
+        "Hibernate",
+        "MySQL",
+        ".NET",
+        "C#",
+        "ASP.NET MVC",
+        "JavaScript",
+        "Maven"
+      ]
     }
   ],
   "ia": {
     "titular": "Experiencia en IA generativa aplicada a producto (desde 2024)",
     "puntos": [
       "Integración de APIs de múltiples proveedores de IA (OpenAI, Claude, Google Gemini, DeepSeek) en entornos productivos con Next.js y JavaScript.",
-      "Diseño de prompts, flujos conversacionales y orquestación de agentes de IA para automatizar tareas.",
+      "Diseño de prompts, flujos conversacionales y orquestación de agentes de IA —propios y de código abierto— para automatizar tareas de desarrollo y de negocio.",
+      "Evalué 3 modelos de IA como agentes de programación sobre el código de un proyecto en producción y preparé las instrucciones del repositorio para trabajar con ellos.",
       "IA generativa en productos reales: análisis inteligente de datos, generación de contenido y recomendaciones personalizadas.",
       "Administración de servidor VPS propio para desplegar servicios e IA en la nube (varios flujos en funcionamiento).",
       "Optimización de rendimiento, latencia y coste en llamadas a modelos de IA en aplicaciones web activas."
@@ -111,9 +269,21 @@
     "Proactivo, con gran capacidad de aprendizaje y motivación por retos técnicos."
   ],
   "idiomas": [
-    {"idioma": "Español", "nivel": "Nativo"},
-    {"idioma": "Gallego", "nivel": "Nativo"},
-    {"idioma": "Portugués", "nivel": "Buena comprensión"},
-    {"idioma": "Inglés", "nivel": "Intermedio"}
+    {
+      "idioma": "Español",
+      "nivel": "Nativo"
+    },
+    {
+      "idioma": "Gallego",
+      "nivel": "Nativo"
+    },
+    {
+      "idioma": "Portugués",
+      "nivel": "Buena comprensión"
+    },
+    {
+      "idioma": "Inglés",
+      "nivel": "Intermedio"
+    }
   ]
 }

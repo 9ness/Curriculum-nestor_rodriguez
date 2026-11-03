@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Automatizaciones con IA · Néstor Rodríguez Tubío</title>
+<meta name="description" content="Automatizo tareas de empresas y autónomos con inteligencia artificial: chatbots, automatización de tareas, integración de IA y agentes." />
+<style>
+  :root{
+    --bg:#0b0f17; --bg2:#111826; --card:#151d2c; --line:#233149;
+    --txt:#e8edf5; --muted:#9fb0c9; --accent:#5b8cff; --accent2:#22d3a5;
+    --radius:16px; --maxw:960px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(11,15,23,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px;padding-top:10px;padding-bottom:10px;gap:10px}
+  nav .name{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  nav .actions{display:flex;gap:10px;flex-shrink:0}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-weight:600;font-size:14px;border:1px solid var(--line);transition:.2s;cursor:pointer}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:linear-gradient(135deg,var(--accent),#4f7cf0);border-color:transparent;color:#fff;box-shadow:0 6px 20px rgba(91,140,255,.25)}
+  .btn-ghost{background:var(--card);color:var(--txt)}
+  .btn-sm{padding:7px 12px;font-size:13px}
+  /* HERO */
+  header{padding:64px 0 40px;background:radial-gradient(1200px 500px at 50% -10%,rgba(91,140,255,.18),transparent 60%)}
+  .titular{color:var(--accent2);font-weight:700;letter-spacing:.5px;text-transform:uppercase;font-size:13px;margin-bottom:14px}
+  h1{font-size:clamp(30px,6vw,50px);line-height:1.1;font-weight:800;letter-spacing:-1px}
+  .sub{color:var(--muted);font-size:clamp(16px,2.4vw,20px);margin-top:16px;max-width:640px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .chip{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-size:13.5px;color:var(--muted)}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  /* HIGHLIGHT */
+  .highlight{margin:36px 0;background:linear-gradient(135deg,rgba(34,211,165,.12),rgba(91,140,255,.10));border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .highlight .big{font-size:clamp(26px,5vw,38px);font-weight:800;color:var(--accent2);line-height:1}
+  .highlight .txt{color:var(--muted);font-size:15px}
+  /* SECTIONS */
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  .eyebrow{color:var(--accent);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+  h2{font-size:clamp(22px,4vw,30px);font-weight:800;letter-spacing:-.5px;margin-bottom:20px}
+  p.lead{color:var(--muted);font-size:16px;max-width:720px}
+  /* SKILLS */
+  .skillgroup{margin-bottom:16px}
+  .skillgroup h3{font-size:14px;color:var(--muted);margin-bottom:10px;font-weight:600}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:6px 11px;font-size:13px}
+  .tag.hot{border-color:var(--accent);color:#cdddff}
+  /* TIMELINE */
+  .job{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin-bottom:14px}
+  .job .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+  .job .role{font-weight:700;font-size:17px}
+  .job .co{color:var(--accent);font-weight:600}
+  .job .date{color:var(--muted);font-size:13px;white-space:nowrap}
+  .job ul{margin:0 0 0 18px;color:var(--muted);font-size:14.5px}
+  .job li{margin:4px 0}
+  .job .stack{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+  .job .stack .tag{font-size:12px;padding:4px 9px}
+  /* FORM */
+  .formcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .formrow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  label{display:block;font-size:13px;color:var(--muted);margin:14px 0 6px}
+  input,textarea{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:11px;padding:12px 14px;color:var(--txt);font-size:15px;font-family:inherit}
+  input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+  textarea{min-height:120px;resize:vertical}
+  .formcard .btn-primary{width:100%;justify-content:center;margin-top:18px;font-size:15px;padding:14px}
+  .alt{margin-top:16px;text-align:center;color:var(--muted);font-size:14px}
+  .alt a{color:var(--accent);font-weight:600}
+  #formMsg{margin-top:14px;text-align:center;font-weight:600;display:none}
+  .cvwrap{text-align:center}
+  .cvpreview{display:inline-block;position:relative;max-width:520px;width:100%;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.35);transition:.2s}
+  .cvpreview:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .cvpreview img{display:block;width:100%;height:auto}
+  .cvoverlay{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(11,15,23,.9));color:#fff;padding:26px 0 14px;font-weight:700;font-size:14px}
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+  .svc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .svc-card .ico{font-size:26px;margin-bottom:10px}
+  .svc-card h3{font-size:16px;margin-bottom:8px}
+  .svc-card p{color:var(--muted);font-size:14px;line-height:1.55}
+  footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  @media(max-width:560px){.formrow{grid-template-columns:1fr}nav .name{font-size:13px;max-width:46%}.btn{padding:9px 12px}nav .actions .nav-extra{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="name" href="/">Néstor Rodríguez Tubío</a>
+    <div class="actions">
+      <a class="btn btn-ghost btn-sm" href="/">← CV</a>
+      <a class="btn btn-primary btn-sm" href="/#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<section id="servicios" style="border-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Proyectos freelance</div>
+    <h2>Automatizo tu empresa con inteligencia artificial</h2>
+    <p class="lead">Además de mi trabajo como backend senior, ayudo a empresas y autónomos a ahorrar horas de trabajo repetitivo integrando IA en sus procesos. Si tienes una tarea que haces una y otra vez, probablemente se pueda automatizar.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="ico">💬</div>
+        <h3>Chatbots y asistentes con IA</h3>
+        <p>Entrenados con la información de tu empresa: web, catálogo, documentos. Responden a tus clientes 24/7.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">📄</div>
+        <h3>Automatización de tareas</h3>
+        <p>Leer y clasificar correos, procesar facturas/PDFs, rellenar hojas de cálculo, mover datos entre sistemas.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">🔌</div>
+        <h3>Integración de IA en tu web o app</h3>
+        <p>OpenAI, Claude, Gemini integrados en tu producto, cuidando latencia y coste.</p>
+      </div>
+      <div class="svc-card">
+        <div class="ico">🤖</div>
+        <h3>Agentes y flujos automáticos</h3>
+        <p>Encadeno varios pasos por ti: de un correo a una acción completa, sin intervención manual.</p>
+      </div>
+    </div>
+    <div class="cta" style="margin-top:24px">
+      <a class="btn btn-primary" href="/#contacto">✉️ Cuéntame tu caso</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Néstor Rodríguez Tubío · <a href="/" style="text-decoration:underline">Ver mi CV</a></div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

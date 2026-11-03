@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Néstor Rodríguez Tubío · Desarrollador Backend Senior — Java & IA</title>
-<meta name="description" content="Desarrollador Backend Senior especializado en Java, Spring Boot, microservicios e IA generativa. Descarga mi CV o solicita una entrevista." />
+<title>Néstor Rodríguez Tubío · Desarrollador Backend Senior — Java, seguridad e IA</title>
+<meta name="description" content="Desarrollador Backend Senior Java con experiencia en banca, administración pública, seguridad de aplicaciones e IA generativa. Descarga mi CV o solicita una entrevista." />
 <style>
   :root{
     --bg:#0b0f17; --bg2:#111826; --card:#151d2c; --line:#233149;
@@ -59,6 +59,10 @@
   .job li{margin:4px 0}
   .job .stack{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
   .job .stack .tag{font-size:12px;padding:4px 9px}
+  .proj{border-left:2px solid var(--line);padding-left:14px;margin:16px 0 4px}
+  .proj .ptop{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 10px;margin-bottom:6px}
+  .proj .pname{font-weight:700;font-size:15px}
+  .proj .note{color:var(--muted);font-size:13px;font-style:italic;margin-top:6px}
   /* FORM */
   .formcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
   .formrow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -75,12 +79,9 @@
   .cvpreview:hover{transform:translateY(-3px);border-color:var(--accent)}
   .cvpreview img{display:block;width:100%;height:auto}
   .cvoverlay{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(11,15,23,.9));color:#fff;padding:26px 0 14px;font-weight:700;font-size:14px}
-  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
-  .svc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
-  .svc-card .ico{font-size:26px;margin-bottom:10px}
-  .svc-card h3{font-size:16px;margin-bottom:8px}
-  .svc-card p{color:var(--muted);font-size:14px;line-height:1.55}
   footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  footer .more{display:block;margin-top:8px;font-size:12.5px}
+  footer .more a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
   @media(max-width:560px){.formrow{grid-template-columns:1fr}nav .name{font-size:13px;max-width:46%}.btn{padding:9px 12px}nav .actions .nav-extra{display:none}}
 </style>
 </head>
@@ -90,7 +91,7 @@
   <div class="wrap">
     <span class="name">Néstor Rodríguez Tubío</span>
     <div class="actions">
-      <a class="btn btn-ghost btn-sm nav-extra" href="#servicios">Automatizaciones</a>
+      <a class="btn btn-ghost btn-sm nav-extra" href="#experiencia">Experiencia</a>
       <a class="btn btn-ghost btn-sm nav-extra" href="#contacto">Contacto</a>
       <!-- El CV se sirve desde el mismo directorio: cv.pdf -->
       <a class="btn btn-primary btn-sm" href="cv.pdf" download>⬇ CV</a>
@@ -100,9 +101,9 @@
 
 <header>
   <div class="wrap">
-    <div class="titular">Desarrollador Backend Senior · Java &amp; IA Generativa</div>
+    <div class="titular">Desarrollador Backend Senior · Java, Seguridad &amp; IA Generativa</div>
     <h1>Néstor Rodríguez<br>Tubío</h1>
-    <p class="sub">Más de 6 años construyendo backend <strong>Java / Spring Boot</strong> sobre microservicios en entornos críticos, integrando <strong>IA generativa (OpenAI, Claude, Gemini, DeepSeek)</strong> y agentes en productos reales, con <strong>VPS propio</strong> para desplegar IA en la nube.</p>
+    <p class="sub">Backend senior <strong>Java</strong> con más de 6 años de experiencia en <strong>banca</strong>, <strong>administración pública</strong>, <strong>seguridad de aplicaciones</strong> e <strong>IA generativa</strong> (OpenAI, Claude, Gemini, DeepSeek), con <strong>VPS propio</strong> para desplegar IA en la nube.</p>
     <div class="chips">
       <span class="chip">📍 Padrón (Galicia) · Remoto</span>
       <span class="chip">✉️ ness4b@gmail.com</span>
@@ -113,7 +114,6 @@
     <div class="cta">
       <a class="btn btn-primary" href="cv.pdf" download>⬇ Descargar CV (PDF)</a>
       <a class="btn btn-ghost" href="#cv">👁 Ver CV</a>
-      <a class="btn btn-ghost" href="#servicios">🤖 Automatizaciones</a>
       <a class="btn btn-ghost" href="#contacto">📅 Solicitar entrevista</a>
     </div>
   </div>
@@ -145,8 +145,8 @@
 <section id="perfil">
   <div class="wrap">
     <div class="eyebrow">Perfil</div>
-    <h2>Backend sólido en Java + IA aplicada a producto</h2>
-    <p class="lead">Desarrollador backend senior con más de 6 años construyendo aplicaciones Java (Spring Boot) sobre arquitecturas de microservicios en administración pública, ámbito judicial, automoción y sanidad. Desde 2024 integro IA generativa con múltiples proveedores (OpenAI, Claude, Google Gemini, DeepSeek) en productos reales —análisis de datos, generación de contenido, recomendaciones y orquestación de agentes— y administro mi propio servidor VPS para desplegar IA en la nube.</p>
+    <h2>Backend Java, seguridad de aplicaciones e IA aplicada a producto</h2>
+    <p class="lead">Desarrollador backend senior Java con más de 6 años de experiencia en banca, administración pública, ámbito judicial, automoción y sanidad. Construyo aplicaciones Java (Spring Boot, Java EE con JSF, EJB y JPA) sobre microservicios y monolitos en WebLogic y Oracle, y trabajo la seguridad de aplicaciones: remediación de vulnerabilidades detectadas por SonarQube (inyección SQL, validación de certificados SSL/TLS, XXE) y firma electrónica. Desde 2024 integro IA generativa con múltiples proveedores (OpenAI, Claude, Google Gemini, DeepSeek) y agentes en productos reales, y administro mi propio servidor VPS para desplegar IA en la nube.</p>
   </div>
 </section>
 
@@ -154,17 +154,26 @@
   <div class="wrap">
     <div class="eyebrow">Tecnologías</div>
     <h2>Stack</h2>
+    <div class="skillgroup"><h3>Lenguajes</h3><div class="tags">
+      <span class="tag hot">Java</span><span class="tag">SQL / PL/SQL</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">C# / .NET</span>
+    </div></div>
     <div class="skillgroup"><h3>Backend &amp; Java</h3><div class="tags">
-      <span class="tag hot">Java (5a 9m)</span><span class="tag hot">Spring Boot</span><span class="tag">Spring Cloud</span><span class="tag">Spring Security</span><span class="tag">JPA / Hibernate</span><span class="tag">SOAP</span><span class="tag">API REST</span>
+      <span class="tag hot">Spring Boot</span><span class="tag">Spring Cloud</span><span class="tag">Spring Security</span><span class="tag">JPA / Hibernate</span><span class="tag">JSF / PrimeFaces</span><span class="tag">EJB</span><span class="tag">API REST (Jersey)</span><span class="tag">SOAP</span><span class="tag">iText</span>
     </div></div>
     <div class="skillgroup"><h3>Arquitectura</h3><div class="tags">
-      <span class="tag hot">Microservicios (4a 2m)</span><span class="tag">Eureka</span><span class="tag">Ribbon</span><span class="tag">RabbitMQ</span><span class="tag">Docker</span><span class="tag">Weblogic</span><span class="tag">Wildfly</span>
+      <span class="tag hot">Microservicios</span><span class="tag">Eureka</span><span class="tag">Ribbon</span><span class="tag">RabbitMQ</span><span class="tag">Docker</span><span class="tag">WebLogic</span><span class="tag">Wildfly</span>
+    </div></div>
+    <div class="skillgroup"><h3>Seguridad</h3><div class="tags">
+      <span class="tag hot">SonarQube</span><span class="tag">OWASP</span><span class="tag">SSL/TLS</span><span class="tag">Inyección SQL</span><span class="tag">XXE</span><span class="tag">Firma electrónica</span>
     </div></div>
     <div class="skillgroup"><h3>IA / GenAI</h3><div class="tags">
       <span class="tag hot">OpenAI</span><span class="tag hot">Claude</span><span class="tag hot">Google Gemini</span><span class="tag hot">DeepSeek</span><span class="tag hot">Ingeniería de prompts</span><span class="tag hot">Agentes de IA</span><span class="tag">Next.js</span><span class="tag">Optimización latencia/coste LLM</span>
     </div></div>
     <div class="skillgroup"><h3>Bases de datos &amp; Cloud</h3><div class="tags">
-      <span class="tag">Oracle</span><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">SAP HANA</span><span class="tag hot">Servidor VPS propio</span><span class="tag hot">IA en la nube</span><span class="tag">AWS</span><span class="tag">SAP BTP</span><span class="tag">Git</span><span class="tag">Maven / Gradle</span>
+      <span class="tag">Oracle PL/SQL</span><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">SAP HANA</span><span class="tag hot">Servidor VPS propio</span><span class="tag hot">IA en la nube</span><span class="tag">AWS</span><span class="tag">SAP BTP</span><span class="tag">Podman / Dev Containers</span><span class="tag">Git</span><span class="tag">Maven / Gradle</span>
+    </div></div>
+    <div class="skillgroup"><h3>Testing</h3><div class="tags">
+      <span class="tag">JUnit</span><span class="tag">Mockito</span><span class="tag">SOAPUI</span><span class="tag">TestLink</span>
     </div></div>
   </div>
 </section>
@@ -175,13 +184,41 @@
     <h2>Experiencia</h2>
 
     <div class="job">
-      <div class="top"><div><span class="role">Desarrollador Backend</span> · <span class="co">Ayesa</span> — Sevilla</div><div class="date">Ene 2023 – Actualidad</div></div>
-      <ul>
-        <li>Soluciones Java (backend y frontend) para la <strong>Junta de Andalucía</strong> en microservicios y monolíticos.</li>
-        <li>Microservicios Spring Boot integrando <strong>SAP</strong> (BTP Cockpit, SAP HANA Cloud, SAP Logon).</li>
-        <li>Procesamiento y validación de CSV con persistencia; full-stack sobre Weblogic, Oracle y MongoDB.</li>
-      </ul>
-      <div class="stack"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservicios</span><span class="tag">SAP HANA</span><span class="tag">MongoDB</span><span class="tag">Oracle</span><span class="tag">AWS</span></div>
+      <div class="top"><div><span class="role">Desarrollador Backend</span> · <span class="co">Ayesa</span> — Sevilla (en remoto)</div><div class="date">Ene 2023 – Actualidad</div></div>
+
+      <div class="proj">
+        <div class="ptop"><span class="pname">Plataforma de facturación electrónica para una entidad bancaria</span><span class="date">Sep 2026 – Actualidad</span></div>
+        <ul>
+          <li>Remedié vulnerabilidades de seguridad detectadas por <strong>SonarQube</strong> en una plataforma con más de 100 repositorios Java (WebLogic, Oracle): <strong>inyección SQL</strong> en JDBC, validación de certificados <strong>SSL/TLS</strong>, <strong>XXE</strong> y otras.</li>
+          <li>Analicé y justifiqué ante el cliente los falsos positivos, con documentación técnica de cada caso.</li>
+          <li>Inventarié las integraciones con terceros que no validaban certificados, incluidas varias que el análisis automático no detectaba, y definí el patrón común de corrección (TLS 1.2 con el truststore de la JVM) acordado con el equipo.</li>
+          <li>Estimé y planifiqué las correcciones críticas y coordiné con sistemas el despliegue sin cortar conexiones en producción.</li>
+        </ul>
+        <div class="stack"><span class="tag">Java</span><span class="tag">JDBC</span><span class="tag">SonarQube</span><span class="tag">SSL/TLS</span><span class="tag">WebLogic</span><span class="tag">Oracle</span><span class="tag">Maven</span><span class="tag">Git</span></div>
+      </div>
+
+      <div class="proj">
+        <div class="ptop"><span class="pname">Portal de empleo público · Junta de Andalucía</span><span class="date">Abr 2025 – Actualidad</span></div>
+        <ul>
+          <li>Desarrollé de principio a fin la solicitud y adjudicación de plazas para acceso libre y bolsa de trabajo: formulario reutilizable, PDF, <strong>firma electrónica</strong>, registro telemático e integración con el sistema de RR. HH. corporativo.</li>
+          <li>Rediseñé la custodia documental multi-entorno del microservicio de gestión documental: una sola columna en lugar de cambios en 19 tablas, y cerré un riesgo por el que borrar un documento en preproducción podía eliminar el de producción.</li>
+          <li>Migré la configuración por entorno de Maven a base de datos para que la integración continua genere un único WAR para los 4 entornos.</li>
+          <li>Resolví la mezcla de logs entre dos aplicaciones desplegadas en el mismo WebLogic y recuperé las trazas de excepción que se perdían en 732 puntos del código.</li>
+          <li>Unifiqué los filtros de 66 pantallas con herramientas propias en Python que validan cada cambio automáticamente.</li>
+        </ul>
+        <div class="note">Unos 285 commits en 5 repositorios y más de 50 tareas.</div>
+        <div class="stack"><span class="tag">Java 8</span><span class="tag">JSF/PrimeFaces</span><span class="tag">EJB</span><span class="tag">JPA</span><span class="tag">REST (Jersey)</span><span class="tag">Spring Boot 3</span><span class="tag">Oracle PL/SQL</span><span class="tag">iText 7</span><span class="tag">WebLogic 12.2</span><span class="tag">Podman</span></div>
+      </div>
+
+      <div class="proj">
+        <div class="ptop"><span class="pname">Proyectos Java/SAP · Junta de Andalucía</span><span class="date">Ene 2023 – Mar 2025</span></div>
+        <ul>
+          <li>Desarrollé microservicios Java con Spring Boot integrando el ecosistema <strong>SAP</strong> (BTP Cockpit, SAP HANA Cloud, SAP Logon).</li>
+          <li>Implementé la lectura, validación y procesamiento de archivos CSV con persistencia en base de datos.</li>
+          <li>Trabajé full-stack (XHTML/JSP y JavaScript) en arquitecturas de microservicios y monolíticas sobre WebLogic, Oracle y MongoDB.</li>
+        </ul>
+        <div class="stack"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservicios</span><span class="tag">SAP HANA</span><span class="tag">SAP BTP</span><span class="tag">MongoDB</span><span class="tag">Oracle</span><span class="tag">WebLogic</span></div>
+      </div>
     </div>
 
     <div class="job">
@@ -220,42 +257,10 @@
     <ul style="color:var(--muted);margin-left:18px;font-size:15.5px;max-width:720px">
       <li>Integración de APIs de múltiples proveedores de IA (OpenAI, Claude, Google Gemini, DeepSeek) en producción con Next.js.</li>
       <li>Diseño de prompts, flujos conversacionales y <strong>orquestación de agentes de IA</strong> para automatizar tareas.</li>
+      <li>Evalué 3 modelos de IA como <strong>agentes de programación</strong> sobre el código de un proyecto en producción y preparé las instrucciones del repositorio para trabajar con ellos.</li>
       <li>IA generativa en productos reales: análisis de datos, generación de contenido y recomendaciones.</li>
       <li><strong>Administración de servidor VPS propio</strong> para desplegar servicios e IA en la nube; optimización de latencia y coste en LLMs.</li>
     </ul>
-  </div>
-</section>
-
-<section id="servicios">
-  <div class="wrap">
-    <div class="eyebrow">Proyectos freelance</div>
-    <h2>Automatizo tu empresa con inteligencia artificial</h2>
-    <p class="lead">Además de mi trabajo como backend senior, ayudo a empresas y autónomos a ahorrar horas de trabajo repetitivo integrando IA en sus procesos. Si tienes una tarea que haces una y otra vez, probablemente se pueda automatizar.</p>
-    <div class="svc-grid">
-      <div class="svc-card">
-        <div class="ico">💬</div>
-        <h3>Chatbots y asistentes con IA</h3>
-        <p>Entrenados con la información de tu empresa: web, catálogo, documentos. Responden a tus clientes 24/7.</p>
-      </div>
-      <div class="svc-card">
-        <div class="ico">📄</div>
-        <h3>Automatización de tareas</h3>
-        <p>Leer y clasificar correos, procesar facturas/PDFs, rellenar hojas de cálculo, mover datos entre sistemas.</p>
-      </div>
-      <div class="svc-card">
-        <div class="ico">🔌</div>
-        <h3>Integración de IA en tu web o app</h3>
-        <p>OpenAI, Claude, Gemini integrados en tu producto, cuidando latencia y coste.</p>
-      </div>
-      <div class="svc-card">
-        <div class="ico">🤖</div>
-        <h3>Agentes y flujos automáticos</h3>
-        <p>Encadeno varios pasos por ti: de un correo a una acción completa, sin intervención manual.</p>
-      </div>
-    </div>
-    <div class="cta" style="margin-top:24px">
-      <a class="btn btn-primary" href="#contacto">✉️ Cuéntame tu caso</a>
-    </div>
   </div>
 </section>
 
@@ -296,7 +301,8 @@
 </section>
 
 <footer>
-  <div class="wrap">© <span id="y"></span> Néstor Rodríguez Tubío · Desarrollador Backend Senior · Java &amp; IA</div>
+  <div class="wrap">© <span id="y"></span> Néstor Rodríguez Tubío · Desarrollador Backend Senior · Java &amp; IA
+    <span class="more"><a href="/servicios">Automatizaciones con IA para empresas</a></span></div>
 </footer>
 
 <script>

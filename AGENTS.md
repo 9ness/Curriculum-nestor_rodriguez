@@ -93,6 +93,7 @@ ni `.github/workflows/`, ni configuración de formateo Python o JS).
 ```
 (raíz)                     # la web se sirve DESDE AQUÍ (Vercel sin "Root Directory")
   index.html               # web pública: portafolio + descarga CV + formulario Web3Forms
+  servicios.html           # /servicios: oferta freelance de automatización con IA (enlace discreto en el pie de index)
   login.html               # formulario de contraseña -> POST /api/login
   panel.html               # panel privado: hub de enlaces + "Mis proyectos"
   ofertas.html             # ofertas + CV adaptado por empresa + enlace para aplicar
@@ -123,6 +124,11 @@ web/                       # VACÍO (restos de cuando la web no se servía desde
 **Flujo de datos del CV:** `cv/datos.json` (+ opcional `cv/adaptados/<slug>.adapt.json`)
 → `tools/generar_pdf.py` → PDF/PNG. Todo lo demás (HTML de las páginas) es contenido
 escrito a mano.
+
+**Puestos con varios proyectos:** una entrada de `datos.json:experiencia` puede llevar
+`proyectos[{nombre, periodo, puntos, nota?, tecnologias}]` (del más reciente al más antiguo) en vez de
+`puntos`; `generar_pdf.py:job` los pinta todos. Confidencialidad: no nombrar al banco cliente ni poner
+servidores, hosts, componentes internos ni código; no poner «en producción» en lo que aún no ha subido.
 
 **Contrato de `<slug>.adapt.json`** (lo consume `generar_pdf.py:build`):
 `empresa`, `puesto`, `titular`, `perfil`, `cards`, `skills_order`, `checks[{req, estado}]`

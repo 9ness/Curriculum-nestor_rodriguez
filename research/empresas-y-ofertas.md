@@ -164,10 +164,11 @@ Filtros: 100 % teletrabajo en España, sin inglés hablado, empresas que usan IA
 
 
 **Solicitudes 17/11/2026:**
-- **Enviadas (3):** Seedtag · Senior Agentic Platform Engineer (formulario web); Paradigma Digital · AI Engineer + Agentic AI Architect (un email a careers@paradigmadigital.com con el CV).
+- **Enviadas (5):** Seedtag · Senior Agentic Platform Engineer (formulario web); Paradigma Digital · AI Engineer + Agentic AI Architect (un email a careers@paradigmadigital.com con el CV); The White Team · AI Agent Engineer (formulario web: 38.000 € o 320 €/día como autónomo); Maisa · Applied AI Engineer (https://careers.kula.ai/maisa/19940-applied-ai-engineer, formulario sin preguntas de salario; remoto Europa, anuncio en inglés).
 - **Sin enviar:**
   - Invox (en su Personio pone «Murcia Híbrido»).
   - Las 2 de Fever (Madrid, con días en casa: no es 100 % remoto; preguntan nivel de inglés).
   - Michael Page AI Engineer y masterlex: Tecnoempleo pide sesión y verificación de Cloudflare → las aplica Néstor a mano.
   - knowmad Java Software Architect & AI y knowmad AI Architect (piden experiencia formal de arquitecto, 5 años, K8s e IaC).
-  - The White Team: falta la fecha de nacimiento y la tarifa freelance.
+
+**Búsqueda extra 17/11/2026 (IA, empleado o autónomo, jornada completa):** solo 4 pasaron el filtro y ninguna publica salario. Aplicada Maisa. Descartadas: Experience IT · Python IA & Agentes y Baoss · Consultor IA (consultoras, outsourcing); Enerwise · Desarrollador IA freelance (empresa sin verificar, remoto no confirmado).

@@ -56,10 +56,10 @@ S = {
 
 KW = ["Spring Boot", "Spring Cloud", "Spring Security", "Spring MVC", "microservicios",
       "IA generativa", "SAP HANA", "SAP BTP", "SAP", "SOAP", "API REST", "OpenAI",
-      "Google Gemini", "Gemini", "Claude", "DeepSeek", "Next.js", "Oracle", "MongoDB",
+      "Google Gemini", "Gemini", "Claude Code", "Claude", "Codex", "DeepSeek", "Next.js", "Oracle", "MongoDB",
       "RabbitMQ", "Weblogic", "WebLogic", "SonarQube", "SSL/TLS", "XXE",
       "inyección SQL", "firma electrónica", "entidad bancaria", "Junta de Andalucía", "Ford", "SERGAS", "VPS", "agentes",
-      "prompts", "Java", "LLM", "Kafka", "Docker", "AWS", "Angular"]
+      "prompts", "Java", "LLM", "MCP", "FastAPI", "A/B", "Kafka", "Docker", "AWS", "Angular"]
 
 
 def bold_kw(text):
@@ -219,7 +219,7 @@ def build(data, out, adapt=None):
     cards = [
         ["6+ años", "Java · Spring Boot · Microservicios"],
         ["IA en producción", "OpenAI · Claude · Gemini · agentes"],
-        ["VPS propio", "Despliegue de IA en la nube"],
+        ["2 SaaS con IA", "en producción · servidor propio"],
         ["+5.700 M", "visualizaciones (AR / IA)"],
     ]
     story += stat_cards([tuple(c) for c in cards])
@@ -242,7 +242,17 @@ def build(data, out, adapt=None):
     for i, e in enumerate(data["experiencia"]):
         story += job(e, last=(i == len(data["experiencia"]) - 1))
 
-    story += section("IA generativa aplicada a producto (desde 2024)")
+    if data.get("proyectos_propios"):
+        story += section("Proyectos propios con IA")
+        for pr in data["proyectos_propios"]:
+            b = [Paragraph(f'{pr["nombre"]}&nbsp;&nbsp;<font color="#5c6b82" size="8.2">· {pr["periodo"]}</font>', S["proj"])]
+            for pt in pr["puntos"]:
+                b.append(Paragraph("•&nbsp;&nbsp;" + bold_kw(pt), S["bullet"]))
+            if pr.get("tecnologias"):
+                b.append(Paragraph(" · ".join(pr["tecnologias"]), S["stack"]))
+            story.append(KeepTogether(b))
+
+    story += section(data["ia"].get("titular", "IA generativa aplicada a producto (desde 2024)"))
     for pt in data["ia"]["puntos"][:4]:
         story.append(Paragraph("•&nbsp; " + bold_kw(pt), S["bullet"]))
 

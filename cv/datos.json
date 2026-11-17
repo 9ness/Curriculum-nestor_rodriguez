@@ -1,28 +1,28 @@
 {
   "meta": {
     "descripcion": "Fuente de verdad con los datos del CV de Néstor. El CV maestro (cv-maestro.md) y la web se generan a partir de aquí. Las versiones adaptadas por empresa parten de este mismo contenido.",
-    "actualizado": "2026-10-30",
+    "actualizado": "2026-11-17",
     "regla_de_oro": "NUNCA inventar. Solo reorganizar, reescribir y enfatizar lo que ya es cierto."
   },
   "personal": {
     "nombre": "Néstor Rodríguez Tubío",
-    "titular": "Desarrollador Backend Senior · Java, Seguridad & IA Generativa",
+    "titular": "Desarrollador Backend Senior · Java, Seguridad & IA Generativa / Agentes",
     "ubicacion": "Padrón (A Coruña), Galicia",
     "disponibilidad": "Trabajo en remoto · disponible para proyectos en toda España",
     "email": "ness4b@gmail.com",
     "telefono": "638 412 999",
     "linkedin": "https://www.linkedin.com/in/néstor-rodríguez-tubío-6914a7171",
     "github": "https://github.com/9ness",
-    "web": "PENDIENTE_DESPLIEGUE_VERCEL"
+    "web": "https://curriculum-nestor-rodriguez.vercel.app"
   },
-  "resumen": "Desarrollador backend senior Java con más de 6 años de experiencia en banca, administración pública, ámbito judicial, automoción y sanidad. Construyo aplicaciones Java (Spring Boot, Java EE con JSF, EJB y JPA) sobre microservicios y monolitos en WebLogic y Oracle, y trabajo la seguridad de aplicaciones: remediación de vulnerabilidades detectadas por SonarQube (inyección SQL, validación de certificados SSL/TLS, XXE) y firma electrónica. Desde 2024 integro IA generativa en productos reales con múltiples proveedores (OpenAI, Claude, Google Gemini, DeepSeek) y agentes de código abierto, cuidando latencia y coste, y administro mi propio servidor VPS para desplegar servicios e IA en la nube.",
-  "perfil_corto": "Backend senior Java con más de 6 años de experiencia en banca, administración pública, seguridad de aplicaciones e IA generativa. Spring Boot, microservicios y Java EE (JSF, EJB, JPA) sobre WebLogic y Oracle; remediación de vulnerabilidades con SonarQube (inyección SQL, SSL/TLS, XXE) y firma electrónica. Desde 2024, IA generativa en producto (OpenAI, Claude, Gemini, DeepSeek) y orquestación de agentes sobre servidor VPS propio.",
+  "resumen": "Desarrollador backend senior Java con más de 6 años de experiencia en banca, administración pública, ámbito judicial, automoción y sanidad. Construyo aplicaciones Java (Spring Boot, Java EE con JSF, EJB y JPA) sobre microservicios y monolitos en WebLogic y Oracle, y trabajo la seguridad de aplicaciones: remediación de vulnerabilidades detectadas por SonarQube (inyección SQL, validación de certificados SSL/TLS, XXE) y firma electrónica. Desde 2024 llevo IA generativa a producción: dos SaaS propios en uso real con LLM de varios proveedores (Claude, OpenAI, Gemini, DeepSeek), servidores MCP para que agentes de IA operen esos productos, elección de modelos por pruebas A/B con casos reales y control de coste por llamada, y una flota de agentes de IA (Claude Code, Codex) que gestiono en mi propio servidor con Docker, CI/CD y observabilidad.",
+  "perfil_corto": "Backend senior Java con más de 6 años en banca, administración pública y seguridad de aplicaciones: Spring Boot, microservicios y Java EE (JSF, EJB, JPA) sobre WebLogic y Oracle; remediación de vulnerabilidades con SonarQube (inyección SQL, SSL/TLS, XXE) y firma electrónica. Desde 2024, IA generativa en producción: dos SaaS propios con LLM (Claude, OpenAI, Gemini), agentes de IA con servidores MCP, evaluación A/B de modelos por coste y calidad, y despliegue en servidor propio con Docker.",
   "skills": {
     "lenguajes": [
       "Java",
       "SQL / PL/SQL",
       "Python",
-      "JavaScript",
+      "TypeScript / JavaScript",
       "C# / .NET",
       "HTML/CSS"
     ],
@@ -36,7 +36,8 @@
       "EJB",
       "API REST (Jersey)",
       "Servicios SOAP",
-      "iText"
+      "iText",
+      "FastAPI (Python)"
     ],
     "microservicios": [
       "Arquitectura de microservicios",
@@ -56,12 +57,13 @@
       "Firma electrónica"
     ],
     "ia": [
-      "Integración de APIs de IA (OpenAI, Claude, Google Gemini, DeepSeek)",
-      "Orquestación de agentes de IA (propios y de código abierto)",
-      "Ingeniería de prompts",
-      "IA generativa en producto",
-      "Next.js",
-      "Optimización de latencia y coste en LLMs"
+      "Integración de LLM en producción (Claude, OpenAI, Gemini, DeepSeek)",
+      "Agentes de IA y servidores MCP",
+      "Orquestación multiagente (Claude Code, Codex)",
+      "Evaluación A/B de modelos y control de coste (FinOps de IA)",
+      "Salidas estructuradas (JSON Schema), validadores y caché de prompt",
+      "IA multimodal (visión, voz con Whisper)",
+      "Ingeniería de prompts"
     ],
     "bases_de_datos": [
       "Oracle SQL / PL/SQL",
@@ -71,10 +73,12 @@
       "SAP HANA"
     ],
     "cloud_devops": [
-      "Servidor VPS propio (administración y despliegue)",
-      "Despliegue de IA y servicios en la nube",
+      "Docker / Docker Compose",
+      "CI/CD (GitHub Actions, webhooks)",
+      "Linux / VPS propio (systemd, Caddy)",
+      "Redis",
+      "Vercel",
       "Amazon AWS",
-      "Docker",
       "Podman / Dev Containers",
       "Git / GitHub / Bitbucket",
       "Maven",
@@ -85,14 +89,18 @@
     "testing": [
       "JUnit",
       "Mockito",
+      "pytest",
+      "Vitest",
+      "Playwright",
       "SOAPUI",
       "TestLink"
     ],
     "frontend": [
-      "JavaScript",
+      "Next.js",
       "React / Redux",
+      "TypeScript",
+      "JavaScript",
       "XHTML/JSP",
-      "AJAX",
       "HTML/CSS"
     ]
   },
@@ -244,14 +252,13 @@
     }
   ],
   "ia": {
-    "titular": "Experiencia en IA generativa aplicada a producto (desde 2024)",
+    "titular": "IA generativa y agentes en producción (desde 2024)",
     "puntos": [
-      "Integración de APIs de múltiples proveedores de IA (OpenAI, Claude, Google Gemini, DeepSeek) en entornos productivos con Next.js y JavaScript.",
-      "Diseño de prompts, flujos conversacionales y orquestación de agentes de IA —propios y de código abierto— para automatizar tareas de desarrollo y de negocio.",
-      "Evalué 3 modelos de IA como agentes de programación sobre el código de un proyecto en producción y preparé las instrucciones del repositorio para trabajar con ellos.",
-      "IA generativa en productos reales: análisis inteligente de datos, generación de contenido y recomendaciones personalizadas.",
-      "Administración de servidor VPS propio para desplegar servicios e IA en la nube (varios flujos en funcionamiento).",
-      "Optimización de rendimiento, latencia y coste en llamadas a modelos de IA en aplicaciones web activas."
+      "Diseñé servidores MCP (hasta 60 herramientas, acceso por token firmado con HMAC) para que agentes de IA (Claude Code, Codex) operen de punta a punta productos reales con los mismos permisos que la web.",
+      "Elijo modelos con datos: pruebas A/B «en la sombra» con casos reales y coste medido por llamada; p. ej., guiones pasados de Sonnet a Haiku con 5-10 veces menos coste y 8 de 8 guiones válidos en las pruebas.",
+      "Integro varios proveedores (Claude, OpenAI, Gemini, DeepSeek) con respaldo automático, salida JSON con esquema, validadores con reintento y caché de prompt.",
+      "Gestiono una flota de agentes de IA en servidor propio: reparto de tareas programadas, cambio de proveedor al agotarse la cuota, memoria persistente y panel de observabilidad de uso y coste.",
+      "Llevé el desarrollo asistido por agentes a todos mis repositorios (instrucciones por repo y reparto de modelos) y evalué 3 modelos como agentes de programación sobre un proyecto en producción."
     ]
   },
   "educacion": [
@@ -284,6 +291,63 @@
     {
       "idioma": "Inglés",
       "nivel": "Intermedio"
+    }
+  ],
+  "proyectos_propios": [
+    {
+      "nombre": "TikTok Factory · SaaS de automatización de vídeo con IA",
+      "periodo": "Dic 2025 - Actualidad",
+      "puntos": [
+        "SaaS multiusuario en solitario (FastAPI con ~140.000 líneas de Python + Next.js) que crea y publica vídeos cortos: guion con LLM, voz, subtítulos y montaje, con cola de trabajos propia por WebSocket.",
+        "Orquesta Claude, Gemini, OpenAI y modelos de vídeo y voz con respaldo automático; coste de cada llamada por usuario y producto.",
+        "Reduje los despliegues de 30 minutos de caída a segundos (Docker Compose, Caddy, CI/CD por webhook)."
+      ],
+      "tecnologias": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "Redis",
+        "Docker",
+        "Claude API",
+        "Gemini",
+        "MCP",
+        "FFmpeg",
+        "Whisper"
+      ]
+    },
+    {
+      "nombre": "MasterPicks · SaaS de pronósticos deportivos con IA",
+      "periodo": "Dic 2025 - Actualidad",
+      "puntos": [
+        "Web y app Android con suscripciones de pago y agente conversacional de soporte; 339 usuarios registrados (sep 2026).",
+        "Pipeline de predicción con la API de Claude: el modelo principal publica y otros corren en sombra con el mismo validador; caché de prompt y coste real por modelo en el panel.",
+        "28 flujos automatizados en GitHub Actions y almacén analítico con DuckDB."
+      ],
+      "tecnologias": [
+        "Next.js",
+        "TypeScript",
+        "Python",
+        "Anthropic SDK",
+        "Redis",
+        "GitHub Actions",
+        "Capacitor"
+      ]
+    },
+    {
+      "nombre": "Plataforma de asistentes y agentes de IA",
+      "periodo": "Oct 2026 - Actualidad",
+      "puntos": [
+        "Asistentes de IA para varias personas (web, app Android y Telegram) sobre Claude Code, Codex y OpenCode, con pasarela MCP multiusuario que deniega por defecto y fija la identidad de cada usuario.",
+        "Integraciones OAuth (Google Calendar) verificadas antes de confirmar cada acción y skill de Alexa con Claude Haiku."
+      ],
+      "tecnologias": [
+        "Python",
+        "asyncio",
+        "MCP",
+        "Claude API",
+        "OAuth 2.0",
+        "Android"
+      ]
     }
   ]
 }

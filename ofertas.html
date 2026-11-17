@@ -43,6 +43,7 @@
   .tab.active{background:var(--accent);color:#04122e;border-color:transparent}
   .tabpanel{display:none}
   .tabpanel.active{display:block}
+  .aff.inl{position:static;display:inline-block;align-self:flex-start;margin-bottom:8px}
   footer{padding:30px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
 </style>
 </head>
@@ -51,7 +52,7 @@
   <div class="wrap">
     <div class="eyebrow">Panel privado · búsqueda de empleo</div>
     <h1>Ofertas Java + IA · sin inglés</h1>
-    <p class="sub">Ofertas reales (Tecnoempleo, julio 2026) que encajan con tu perfil. Cada tarjeta tiene tu <b>CV adaptado</b> a esa empresa y el enlace para <b>aplicar</b>. Ordenadas por afinidad.</p>
+    <p class="sub">Ofertas reales (Tecnoempleo y webs de empresa, julio y noviembre 2026) que encajan con tu perfil. Cada tarjeta tiene tu <b>CV adaptado</b> a esa empresa y el enlace para <b>aplicar</b>. Ordenadas por afinidad.</p>
     <a class="back" href="panel.html">← Panel</a>
   </div>
 </header>
@@ -60,11 +61,298 @@
   <p class="note">💡 Recomendado: descarga el CV adaptado, ábrelo para revisarlo, y pulsa “Ver oferta y aplicar”. En Tecnoempleo te inscribes y adjuntas ese PDF. Verifica siempre sueldo y requisitos en la propia oferta antes de aplicar.</p>
 
   <div class="tabs">
-    <button class="tab active" data-tab="tab-ofertas">🎯 Ofertas (7)</button>
+    <button class="tab active" data-tab="tab-nov">🆕 Nov 2026 (20)</button>
+    <button class="tab" data-tab="tab-ofertas">🎯 Julio 2026 (7)</button>
     <button class="tab" data-tab="tab-startups">🚀 Startups IA (3)</button>
   </div>
 
-  <div id="tab-ofertas" class="tabpanel active">
+  <div id="tab-nov" class="tabpanel active">
+  <p class="sub" style="margin:22px 0 0">Buscadas el 17/11/2026: 100 % teletrabajo en España, sin inglés hablado, IA/agentes y ≥35k (salario confirmado solo donde se indica). Ordenadas por encaje. Ninguna aplicada todavía.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="body">
+        <span class="aff inl ">92%</span>
+        <div class="co">knowmad mood</div>
+        <div class="role">Java Software Engineer + IA</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span><span class="chip">Indefinido</span></div>
+        <div class="fit">✓ Tu perfil exacto: Java 21, Spring Boot, microservicios y hexagonal, con desarrollo asistido por IA (Claude, Copilot) y MCP/RAG como valorables.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Consultora grande: pregunta la banda salarial al empezar.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.tecnoempleo.com/java-software-engineer-ia-knowmad-mood/spring/rf-a92d1eddf2d413bea542" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl ">92%</span>
+        <div class="co">Paradigma Digital</div>
+        <div class="role">AI Engineer</div>
+        <div class="chips"><span class="chip">Remoto o híbrido</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span></div>
+        <div class="fit">✓ Pide agentes, multiagente, servidores MCP y tool calling con Python/TypeScript: lo que ya haces en tus proyectos.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Confirma que puede ser 100 % remoto.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://paradigmadigital.jobs.personio.de/job/2736712" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl ">90%</span>
+        <div class="co">Paradigma Digital</div>
+        <div class="role">Agentic AI Architect</div>
+        <div class="chips"><span class="chip">Remoto o híbrido</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span></div>
+        <div class="fit">✓ Arquitectura multiagente, RAG y seguridad GenAI: un paso adelante en IA con tu base de backend y seguridad.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Confirma que puede ser 100 % remoto.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://paradigmadigital.jobs.personio.de/job/2822110" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl ">90%</span>
+        <div class="co">knowmad mood</div>
+        <div class="role">Java Software Architect &amp; AI</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip">Inglés B2 valorable, no obligatorio</span><span class="chip">Indefinido</span></div>
+        <div class="fit">✓ Java sénior, arquitectura y microservicios con IA generativa aplicada al desarrollo: tu perfil exacto, un escalón arriba.</div>
+        
+        <div class="btns">
+          <a class="btn btn-primary" href="https://knowmadmood.teamtailor.com/jobs/8753394-java-software-architect-ai-100-remoto" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl ">85%</span>
+        <div class="co">Michael Page → tecnológica global (sin nombre)</div>
+        <div class="role">AI Engineer</div>
+        <div class="chips"><span class="chip ok">39.000-60.000 €</span><span class="chip ok">100% remoto</span><span class="chip ok">Sin inglés</span><span class="chip">Indefinido</span></div>
+        <div class="fit">✓ IA y RAG en producción con Python y cloud, 3-5 años: tus SaaS con LLM y la flota de agentes encajan de lleno. Es la de mejor sueldo publicado.</div>
+        
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.tecnoempleo.com/ai-engineer-michael-page/inteligencia-artificial-rag/rf-56a41791825d93d9f146" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl ">85%</span>
+        <div class="co">Grupo Digital</div>
+        <div class="role">Fullstack IA &amp; Microservicios (Watson)</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario «competitivo»</span><span class="chip ok">Sin inglés</span></div>
+        <div class="fit">✓ Java/Spring Boot + LLM, RAG y agentes (LangChain, Azure OpenAI, watsonx) en entorno empresa.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Salario sin publicar: puede quedar por debajo de 35k, confírmalo antes.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.tecnoempleo.com/fullstack-ia-microservicios-watson-grupo-digital/inteligencia-artificial-p/rf-65b6183d527593cdb843" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl ">85%</span>
+        <div class="co">Paradigma Digital</div>
+        <div class="role">Senior AI Platform Engineer · LLM Gateway</div>
+        <div class="chips"><span class="chip">Remoto o híbrido</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span></div>
+        <div class="fit">✓ Pasarela LLM multi-proveedor (OpenAI/AWS/Azure) por coste y calidad: tu A/B de modelos y respaldo entre proveedores.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Confirma que puede ser 100 % remoto.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://paradigmadigital.jobs.personio.de/job/2821245" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl ">85%</span>
+        <div class="co">knowmad mood</div>
+        <div class="role">AI Architect &amp; Software Architect</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip">Inglés B2 valorable, no obligatorio</span><span class="chip">Indefinido</span></div>
+        <div class="fit">✓ Arquitecto de IA con base de software: crecer en IA sin dejar el backend.</div>
+        
+        <div class="btns">
+          <a class="btn btn-primary" href="https://knowmadmood.teamtailor.com/jobs/8753342-ai-architect-and-software-architect-100-remoto" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl mid">82%</span>
+        <div class="co">knowmad mood</div>
+        <div class="role">Arquitecto/a IA Generativa Senior</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span><span class="chip">Indefinido</span></div>
+        <div class="fit">✓ Pide Claude Code/Codex, context engineering, microservicios, OAuth/JWT y Oracle: tu mezcla de banca + agentes. Un salto a arquitecto IA.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Pide 2 años como arquitecto IA; tú lo cubres con proyectos propios.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://knowmadmood.teamtailor.com/jobs/8705638-arquitecto-a-de-ia-generativa-software-engineering-ai-solutions" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl mid">82%</span>
+        <div class="co">knowmad mood</div>
+        <div class="role">Senior Software Developer Java &amp; AI</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span><span class="chip">Indefinido</span></div>
+        <div class="fit">✓ Java/Spring, microservicios y API First con IA en el ciclo de desarrollo.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Puede ser la misma vacante que «Java Software Engineer + IA» de Tecnoempleo: aplica solo a una.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://knowmadmood.teamtailor.com/jobs/8643682-senior-software-developer-java-ai-remoto" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl mid">80%</span>
+        <div class="co">masterlex</div>
+        <div class="role">Ingeniero/a de IA y AWS</div>
+        <div class="chips"><span class="chip ok">36.000-48.000 €</span><span class="chip ok">100% remoto</span><span class="chip ok">Sin inglés</span><span class="chip">4 puestos</span></div>
+        <div class="fit">✓ RAG, despliegue y seguridad en cloud con 3 años de experiencia: encaja con tus despliegues y la IA en producción.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Tu AWS es menor que tu experiencia en VPS/Docker: estúdialo un poco antes de la entrevista.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.tecnoempleo.com/ingeniero-ia-aws-masterlex/rag/rf-8ac512bff2ed033e7d48" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl mid">80%</span>
+        <div class="co">knowmad mood → cliente banca</div>
+        <div class="role">AI Architect</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span></div>
+        <div class="fit">✓ Plataforma de IA corporativa en banca, sistemas agénticos y gobierno de modelos por coste: tu banca + tus agentes.</div>
+        
+        <div class="btns">
+          <a class="btn btn-primary" href="https://knowmadmood.teamtailor.com/jobs/8757636-ai-architect" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl mid">80%</span>
+        <div class="co">The White Team</div>
+        <div class="role">AI Agent Engineer (Python, LLMs, RAG)</div>
+        <div class="chips"><span class="chip ok">35.000-38.000 €</span><span class="chip ok">100% remoto</span><span class="chip ok">Sin inglés</span></div>
+        <div class="fit">✓ FastAPI, MCP, LangGraph, Redis y Docker: casi calcado a TikTok Factory.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Salario justo en tu mínimo.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://careers.twtspain.com/jobs/8455883-ai-agent-engineer-python-llms-rag-remote-espana" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl mid">78%</span>
+        <div class="co">Michael Page → multinacional (sin nombre)</div>
+        <div class="role">Senior Software Dev Engineer · AI Agents</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span></div>
+        <div class="fit">✓ Agentes LLM con LangGraph/Bedrock, evaluación offline y observabilidad: lo mismo que haces con tu flota de agentes y los A/B de modelos.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Contrato temporal con posible extensión.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.tecnoempleo.com/senior-software-dev-engineer-ai-agents-michael-pag/python-aws-bedrock/rf-9ba2193e1267d3cffe46" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl mid">78%</span>
+        <div class="co">Seedtag (adtech con IA)</div>
+        <div class="role">Senior Agentic Platform Engineer</div>
+        <div class="chips"><span class="chip">Remoto o híbrido</span><span class="chip">Salario no publicado</span><span class="chip">Empresa internacional</span></div>
+        <div class="fit">✓ Servidores MCP, Claude Agent SDK, LiteLLM y Langfuse: encaje técnico casi perfecto.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Empresa internacional: pregunta el idioma de trabajo antes.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://jobs.seedtag.com/jobs/8562761-senior-agentic-platform-engineer" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl mid">75%</span>
+        <div class="co">UST → cliente banca</div>
+        <div class="role">Ingeniero/a de soluciones IA</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span><span class="chip">Indefinido</span></div>
+        <div class="fit">✓ Arquitectura GenAI multi-proveedor (OpenAI, Vertex, Anthropic) integrada con sistemas legacy de banca: tu experiencia en banca suma.</div>
+        
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.tecnoempleo.com/ingeniero-soluciones-ia-100-remoto-ust/generative-ai-langchain/rf-399d188b82aa23e09849" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl low">70%</span>
+        <div class="co">Invox Medical (startup IA sanitaria)</div>
+        <div class="role">Ingeniero/a Software IA Generativa y Sistemas Agénticos</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">~35-38k (agregador)</span><span class="chip ok">Sin inglés</span><span class="chip">Startup IA</span></div>
+        <div class="fit">✓ Agentes en producción, MCP, evals, enrutado de modelos, FastAPI y TypeScript: casi calcado a tus proyectos propios.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Es como autónomo y solo aparece en un agregador: confirma en invoxmedical.com antes.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.remotejobs.com/jobs/ingeniero-a-de-software-ia-generativa-y-sistemas-agenticos-remoto-100-2f4d0c71" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl low">70%</span>
+        <div class="co">The White Team</div>
+        <div class="role">AI Engineer · GenAI / LLMs / Agentes</div>
+        <div class="chips"><span class="chip ok">100% remoto</span><span class="chip">Salario no publicado</span><span class="chip ok">Sin inglés</span></div>
+        <div class="fit">✓ Agentes y automatización con IA.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ La otra vacante de la casa paga 35-38k: probablemente similar.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://careers.twtspain.com/jobs/8747012-ai-engineer-generative-ai-llms-ai-agents-remoto" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl low">70%</span>
+        <div class="co">Fever</div>
+        <div class="role">Lead AI Engineer</div>
+        <div class="chips"><span class="chip ok">Remoto España</span><span class="chip">Salario no publicado</span><span class="chip">Empresa internacional</span></div>
+        <div class="fit">✓ Agentes LLM, RAG y chatbots en producción, rol de liderazgo.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Otras vacantes de Fever exigen «business English»: pregúntalo.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://job-boards.eu.greenhouse.io/feverup/jobs/4852654101" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <span class="aff inl low">68%</span>
+        <div class="co">Fever</div>
+        <div class="role">AI Engineer · Internal Automation</div>
+        <div class="chips"><span class="chip">España, teletrabajo</span><span class="chip">Salario no publicado</span><span class="chip">Empresa internacional</span></div>
+        <div class="fit">✓ Automatización interna con agentes, RAG y workflows; pide 6+ años, que cumples.</div>
+        <div class="fit" style="color:#f5c26b">⚠️ Riesgo de inglés y de que no sea 100 % remoto.</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://job-boards.eu.greenhouse.io/feverup/jobs/4940097101" target="_blank" rel="noopener">Ver oferta y aplicar</a>
+          <a class="btn btn-ghost" href="cv.pdf" download>⬇ CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="tab-ofertas" class="tabpanel">
   <div class="grid">
 
     <!-- 1 -->
@@ -263,7 +551,7 @@
   </div><!-- /tab-startups -->
 </div>
 
-<footer><div class="wrap">Panel privado de Néstor Rodríguez Tubío · actualizado julio 2026 · <a href="index.html" style="color:var(--accent)">mi web</a></div></footer>
+<footer><div class="wrap">Panel privado de Néstor Rodríguez Tubío · actualizado noviembre 2026 · <a href="index.html" style="color:var(--accent)">mi web</a></div></footer>
 
 <script>
   document.querySelectorAll('.tab').forEach(function(btn){

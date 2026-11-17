@@ -162,3 +162,12 @@ Filtros: 100 % teletrabajo en España, sin inglés hablado, empresas que usan IA
 - Por ser híbridas o presenciales: CAS Lead IA, Serem, Michael Page Madrid (54-60k), Qualifyze AI Platform (50-60k, Barcelona un par de días por semana) y Cabify.
 - Por salario bajo 35k: Baoss.
 
+
+**Solicitudes 17/11/2026:**
+- **Enviadas (3):** Seedtag · Senior Agentic Platform Engineer (formulario web); Paradigma Digital · AI Engineer + Agentic AI Architect (un email a careers@paradigmadigital.com con el CV).
+- **Sin enviar:**
+  - Invox (en su Personio pone «Murcia Híbrido»).
+  - Las 2 de Fever (Madrid, con días en casa: no es 100 % remoto; preguntan nivel de inglés).
+  - Michael Page AI Engineer y masterlex: Tecnoempleo pide sesión y verificación de Cloudflare → las aplica Néstor a mano.
+  - knowmad Java Software Architect & AI y knowmad AI Architect (piden experiencia formal de arquitecto, 5 años, K8s e IaC).
+  - The White Team: falta la fecha de nacimiento y la tarifa freelance.
